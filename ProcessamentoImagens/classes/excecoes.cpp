@@ -1,54 +1,15 @@
 
-#include "cv.h"
-#include "highgui.h"
-#include "../include/imagem.h"
 #include "../include/excecoes.h"
 
-Imagem::Imagem(const char* caminho) {
+using namespace std;
 
-    if (pImg = cvLoadImage(caminho, 1)){
+FileNotFoundException::FileNotFoundException()
+    :mensagem ("Não foi possível abrir o arquivo especificado"){}
 
-        local = caminho;
 
-        matriz = (pImg);
 
-        width = matriz.cols;
+const char* FileNotFoundException::obterMensagem(){
 
-        height = matriz.rows;
-
-    } else
-
-        throw FileNotFoundException();
-
-}
-
-void Imagem::redimensionar(int x, int y){
-
-    //double x = nWidth - width;
-    //double y = nHeight - heigh;
-
-    resize(matriz, matProc, Size(x, y));
-
-    salvar();
-
-}
-
-void Imagem::converter(const string output) {
-
-    matriz.copyTo(matProc);
-
-    imwrite(output, matProc);
-
-}
-
-void Imagem::salvar() {
-
-    imwrite(local, matProc);
-
-}
-
-const char* Imagem::getLocal() {
-
-    return local;
+    return mensagem;
 
 }

@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1337699273 source:/home/tiago/Documents/Projetos/ProcessamentoImagens/ProcessamentoImagens/main.cpp
+	<iostream>
+	"include/imagem.h"
+	"include/excecoes.h"
+	<string.h>
+	"cv.h"
+	"highgui.h"
+
+1337699676 /home/tiago/Documents/Projetos/ProcessamentoImagens/ProcessamentoImagens/include/imagem.h
+	<string>
+	"cv.h"
+
+1337699696 /home/tiago/Documents/Projetos/ProcessamentoImagens/ProcessamentoImagens/include/excecoes.h
+
