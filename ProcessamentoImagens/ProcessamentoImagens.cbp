@@ -11,6 +11,7 @@
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
+				<Option host_application="redimensionar imagens/Tulips.jpg 200 50" />
 				<Compiler>
 					<Add option="-g" />
 				</Compiler>
@@ -20,6 +21,7 @@
 				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
+				<Option host_application="./ProcessamentoImagens redimensionar imagens/Tulips.jpg 200 50" />
 				<Compiler>
 					<Add option="-O2" />
 				</Compiler>
@@ -32,6 +34,10 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="classes/excecoes.cpp" />
+		<Unit filename="classes/imagem.cpp" />
+		<Unit filename="include/excecoes.h" />
+		<Unit filename="include/imagem.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
