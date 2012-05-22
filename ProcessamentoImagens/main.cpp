@@ -7,14 +7,23 @@
 
 using namespace std;
 
-const char* trocarExtensao(char* local, char* extensao) ;
+const char* trocarExtensao(const char* local, const char* extensao) ;
+string copiarNPrimeirosCaracteres(const char* src, int qtd) ;
+string adicionarExtensao(string src, const char* ext);
 
 int main(int argc, char **argv)
 {
 
     try {
 
-        puts("Hello World");
+        /*argv[1] = "redimensionar";
+        argv[2] = "imagens/Tulips.jpg";
+        argv[3] = "200";
+        argv[4] = "50";*/
+
+        /*argv[1] = "converter";
+        argv[2] = "imagens/Penguins.jpg";
+        argv[3] = "png";*/
 
         const char* img = argv[2];
 
@@ -29,12 +38,7 @@ int main(int argc, char **argv)
 
         } else if (strcmp(argv[1], "converter") == 0){
 
-            const char* local = imagem.getLocal();
-
-            const char* frmtConst = argv[3];
-
-            imagem.converter(trocarExtensao((char*)local, (char*)frmtConst));
-
+            imagem.converter(trocarExtensao(imagem.getLocal(), argv[3]));
 
         }
 
@@ -49,19 +53,63 @@ int main(int argc, char **argv)
     return 0;
 }
 
-const char* trocarExtensao(char* local, char* extensao) {
+const char* trocarExtensao(const char* local, const char* extensao) {
 
-    char* pontoRef = strrchr(local, '.');
+    char* localRef = (char*)local;
 
-    char* localSemExtensao;
+    char* pontoRef = strrchr(localRef, '.');
 
-    strncat(localSemExtensao, local, pontoRef - local);
+    //strncpy(localSemExtensao, local, pontoRef - local);
 
-    char ponto[] = ".";
+    string localSemExtensao = copiarNPrimeirosCaracteres(local, pontoRef - local);
 
-    strcat(localSemExtensao, strcat(ponto, extensao));
+    //strcat(localSemExtensao, strcat(ponto, extensao));
 
-    return &localSemExtensao[0];
+    string localComExtensao = adicionarExtensao(localSemExtensao, extensao);
+
+    return localComExtensao.data();
+
+}
+
+string copiarNPrimeirosCaracteres(const char* src, int qtd) {
+
+    int i;
+
+    string dest("");
+
+    for (i = 0; i < qtd; i++)
+
+        dest += src[i];
+
+    return dest;
+
+}
+
+string adicionarExtensao(string src, const char* ext) {
+
+    int tamSrc = src.length();
+
+    int tamExt = strlen(ext);
+
+    string dest ("");
+
+    int i;
+
+    for (i = 0; i < tamSrc ; i++) {
+
+        dest += src.at(i);
+
+    }
+
+    dest += ".";
+
+    for (i = 0; i < tamExt ; i++) {
+
+        dest += ext[i];
+
+    }
+
+    return dest;
 
 }
 
