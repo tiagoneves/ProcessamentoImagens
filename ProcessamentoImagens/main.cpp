@@ -40,6 +40,16 @@ int main(int argc, char **argv)
 
             imagem.converter(trocarExtensao(imagem.getLocal(), argv[3]));
 
+        } else if (strcmp(argv[1], "cortar") == 0) {
+
+            double cx = atof(argv[3]);
+            double cy = atof(argv[4]);
+
+            int width = atoi(argv[5]);
+            int height = atoi(argv[6]);
+
+            imagem.crop(cx, cy, width, height);
+
         }
 
         //MyFrame1 frame(NULL);
@@ -47,6 +57,10 @@ int main(int argc, char **argv)
     }catch(FileNotFoundException fnf) {
 
         printf("%s", fnf.obterMensagem());
+
+    }catch(NotSupportedOperationException nso) {
+
+        printf("%s", nso.obterMensagem());
 
     }
 

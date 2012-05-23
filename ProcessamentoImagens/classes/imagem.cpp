@@ -41,6 +41,24 @@ void Imagem::converter(const string output) {
 
 }
 
+void Imagem::crop(double cx, double cy, int width, int height){
+
+    Rect rect(cx, cy, width, height);
+
+    Point2f centro(cx, cy);
+
+    if (rect.contains(centro)) {
+
+        getRectSubPix(matriz, Size(width, height), centro, matProc);
+
+        salvar();
+
+    } else
+
+        throw NotSupportedOperationException("O centro do retângulo não está na imagem");
+
+}
+
 void Imagem::salvar() {
 
     imwrite(local, matProc);

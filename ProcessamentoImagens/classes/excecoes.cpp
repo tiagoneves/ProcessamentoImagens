@@ -3,13 +3,25 @@
 
 using namespace std;
 
-FileNotFoundException::FileNotFoundException()
-    :mensagem ("Não foi possível abrir o arquivo especificado"){}
+BaseException::BaseException(const char* msg)
+    :mensagem (msg){}
 
-
-
-const char* FileNotFoundException::obterMensagem(){
+const char* BaseException::obterMensagem(){
 
     return mensagem;
 
 }
+
+FileNotFoundException::FileNotFoundException(const char* msg)
+    :BaseException (msg){}
+
+FileNotFoundException::FileNotFoundException()
+    :BaseException ("Não foi possível abrir o arquivo especificado"){}
+
+
+NotSupportedOperationException::NotSupportedOperationException(const char* msg)
+    :BaseException (msg){}
+
+NotSupportedOperationException::NotSupportedOperationException()
+    :BaseException ("Não é possível realizar a operação"){}
+

@@ -3,17 +3,38 @@
 
 using namespace std;
 
-class FileNotFoundException {
+class BaseException {
 
-    private:
+    protected:
 
         const char* mensagem;
 
     public:
 
-        FileNotFoundException();
+        BaseException(const char* msg);
 
         const char* obterMensagem();
+
+};
+
+class FileNotFoundException : public BaseException {
+
+    public:
+
+        FileNotFoundException();
+
+        FileNotFoundException(const char* msg);
+
+};
+
+class NotSupportedOperationException : public BaseException {
+
+    public:
+
+        NotSupportedOperationException();
+
+        NotSupportedOperationException(const char* msg);
+
 
 };
 

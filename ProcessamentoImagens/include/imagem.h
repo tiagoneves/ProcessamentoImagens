@@ -35,6 +35,8 @@ class Imagem {
 
         const char* getLocal();
 
+        void crop(double cx, double cy, int width, int height);
+
 };
 
 
