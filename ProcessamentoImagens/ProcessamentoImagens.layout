@@ -5,15 +5,15 @@
 		<Cursor position="357" topLine="2" />
 	</File>
 	<File name="classes/imagem.cpp" open="1" top="1" tabpos="2">
-		<Cursor position="235" topLine="0" />
+		<Cursor position="1165" topLine="51" />
 	</File>
 	<File name="include/excecoes.h" open="1" top="0" tabpos="4">
 		<Cursor position="427" topLine="15" />
 	</File>
 	<File name="include/imagem.h" open="1" top="0" tabpos="5">
-		<Cursor position="511" topLine="3" />
+		<Cursor position="549" topLine="20" />
 	</File>
 	<File name="main.cpp" open="1" top="0" tabpos="1">
-		<Cursor position="1329" topLine="46" />
+		<Cursor position="1150" topLine="37" />
 	</File>
 </CodeBlocks_layout_file>

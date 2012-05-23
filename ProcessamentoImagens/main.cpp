@@ -50,6 +50,14 @@ int main(int argc, char **argv)
 
             imagem.crop(cx, cy, width, height);
 
+        } else if (strcmp(argv[1], "rotacionar") == 0) {
+
+            double cx = atof(argv[3]);
+            double cy = atof(argv[4]);
+            double angulo = atof(argv[5]);
+
+            imagem.rotacionar(cx, cy, angulo);
+
         }
 
         //MyFrame1 frame(NULL);

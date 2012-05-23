@@ -37,6 +37,8 @@ class Imagem {
 
         void crop(double cx, double cy, int width, int height);
 
+        void rotacionar(double cx, double cy, double angulo);
+
 };
 
 

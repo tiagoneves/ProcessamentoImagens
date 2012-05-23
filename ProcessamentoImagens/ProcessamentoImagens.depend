@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1337744495 source:/home/tiago/Documents/Projetos/ProcessamentoImagens/ProcessamentoImagens/main.cpp
+1337812936 source:/home/tiago/Documents/Projetos/ProcessamentoImagens/ProcessamentoImagens/main.cpp
 	<iostream>
 	"include/imagem.h"
 	"include/excecoes.h"
@@ -7,7 +7,7 @@
 	"cv.h"
 	"highgui.h"
 
-1337742223 /home/tiago/Documents/Projetos/ProcessamentoImagens/ProcessamentoImagens/include/imagem.h
+1337811194 /home/tiago/Documents/Projetos/ProcessamentoImagens/ProcessamentoImagens/include/imagem.h
 	<string>
 	"cv.h"
 
@@ -16,7 +16,7 @@
 1337744479 source:/home/tiago/Documents/Projetos/ProcessamentoImagens/ProcessamentoImagens/classes/excecoes.cpp
 	"../include/excecoes.h"
 
-1337744316 source:/home/tiago/Documents/Projetos/ProcessamentoImagens/ProcessamentoImagens/classes/imagem.cpp
+1337812802 source:/home/tiago/Documents/Projetos/ProcessamentoImagens/ProcessamentoImagens/classes/imagem.cpp
 	"cv.h"
 	"highgui.h"
 	"../include/imagem.h"

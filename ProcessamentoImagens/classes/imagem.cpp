@@ -59,6 +59,16 @@ void Imagem::crop(double cx, double cy, int width, int height){
 
 }
 
+void Imagem::rotacionar(double cx, double cy, double angulo){
+
+    Mat matRot = getRotationMatrix2D(Point2f(cx, cy), angulo, 1);
+
+    transform(matriz, matProc, matRot);
+
+    salvar();
+
+}
+
 void Imagem::salvar() {
 
     imwrite(local, matProc);
