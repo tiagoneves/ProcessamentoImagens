@@ -16,7 +16,7 @@
 1337744479 source:/home/tiago/Documents/Projetos/ProcessamentoImagens/ProcessamentoImagens/classes/excecoes.cpp
 	"../include/excecoes.h"
 
-1337812802 source:/home/tiago/Documents/Projetos/ProcessamentoImagens/ProcessamentoImagens/classes/imagem.cpp
+1337813568 source:/home/tiago/Documents/Projetos/ProcessamentoImagens/ProcessamentoImagens/classes/imagem.cpp
 	"cv.h"
 	"highgui.h"
 	"../include/imagem.h"

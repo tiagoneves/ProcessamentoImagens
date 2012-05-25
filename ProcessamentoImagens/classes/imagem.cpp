@@ -63,7 +63,23 @@ void Imagem::rotacionar(double cx, double cy, double angulo){
 
     Mat matRot = getRotationMatrix2D(Point2f(cx, cy), angulo, 1);
 
-    transform(matriz, matProc, matRot);
+    matriz.assignTo(matRot, 16);
+    matriz.assignTo(matProc, 16);
+
+    /*printf("%d\n", matRot.channels());
+    printf("%d\n", matRot.type());
+    printf("%d\n", matriz.channels());
+    printf("%d\n", matriz.type());
+    printf("%d\n", matProc.channels());
+    printf("%d\n", matProc.type());*/
+
+    //matriz.copyTo(matProc);
+
+    matProc = matriz.mul(matRot);
+
+    //imwrite(local, matRot);
+
+    //transform(matriz, matProc, matRot);
 
     salvar();
 
