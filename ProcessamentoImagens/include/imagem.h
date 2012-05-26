@@ -9,15 +9,13 @@ using namespace cv;
 
 class Imagem {
 
-    private:
+    protected:
 
         const char* local;
 
         IplImage *pImg;
 
         Mat matriz;
-
-        Mat matProc;
 
         int width;
 
@@ -27,17 +25,17 @@ class Imagem {
 
         Imagem(const char* caminho);
 
-        void redimensionar(int x, int y);
+        const char* getLocal() const;
 
-        void salvar();
+        virtual void redimensionar(int x, int y) const = 0;;
 
-        void converter(const string output);
+        virtual void salvar() const = 0;
 
-        const char* getLocal();
+        virtual void converter(const string output) const = 0;
 
-        void crop(double cx, double cy, int width, int height);
+        virtual void crop(double cx, double cy, int width, int height) const = 0;
 
-        void rotacionar(double cx, double cy, double angulo);
+        virtual void rotacionar(double cx, double cy, double angulo) const = 0;
 
 };
 

@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "include/imagem.h"
+#include "include/imagem_opencv.h"
 #include "include/excecoes.h"
 #include <string.h>
 //#include "include/gui/frame.h"
@@ -21,42 +21,50 @@ int main(int argc, char **argv)
         argv[3] = "200";
         argv[4] = "50";*/
 
-        /*argv[1] = "converter";
-        argv[2] = "imagens/Penguins.jpg";
-        argv[3] = "png";*/
+        /*argv[1] = "opencv";
+        argv[2] = "converter";
+        argv[3] = "imagens/Penguins.jpg";
+        argv[4] = "png";*/
 
-        const char* img = argv[2];
+        Imagem *imagem;
 
-        Imagem imagem(img);
+        const char* api = argv[1];
+        const char* img = argv[3];
 
-        if (strcmp(argv[1], "redimensionar") == 0){
+        //ImagemOpenCV imagem(img);
 
-            int x = atoi(argv[3]);
-            int y = atoi(argv[4]);
+        if (strcmp(api, "opencv") == 0)
+           imagem = new ImagemOpenCV(img);
 
-            imagem.redimensionar(x, y);
 
-        } else if (strcmp(argv[1], "converter") == 0){
+        if (strcmp(argv[2], "redimensionar") == 0){
 
-            imagem.converter(trocarExtensao(imagem.getLocal(), argv[3]));
+            int x = atoi(argv[4]);
+            int y = atoi(argv[5]);
 
-        } else if (strcmp(argv[1], "cortar") == 0) {
+            imagem -> redimensionar(x, y);
 
-            double cx = atof(argv[3]);
-            double cy = atof(argv[4]);
+        } else if (strcmp(argv[2], "converter") == 0){
 
-            int width = atoi(argv[5]);
-            int height = atoi(argv[6]);
+            imagem -> converter(trocarExtensao(imagem -> getLocal(), argv[4]));
 
-            imagem.crop(cx, cy, width, height);
+        } else if (strcmp(argv[2], "cortar") == 0) {
 
-        } else if (strcmp(argv[1], "rotacionar") == 0) {
+            double cx = atof(argv[4]);
+            double cy = atof(argv[5]);
 
-            double cx = atof(argv[3]);
-            double cy = atof(argv[4]);
-            double angulo = atof(argv[5]);
+            int width = atoi(argv[6]);
+            int height = atoi(argv[7]);
 
-            imagem.rotacionar(cx, cy, angulo);
+            imagem -> crop(cx, cy, width, height);
+
+        } else if (strcmp(argv[2], "rotacionar") == 0) {
+
+            double cx = atof(argv[4]);
+            double cy = atof(argv[5]);
+            double angulo = atof(argv[6]);
+
+            imagem -> rotacionar(cx, cy, angulo);
 
         }
 

@@ -1,24 +1,30 @@
 # depslib dependency file v1.0
-1337812936 source:/home/tiago/Documents/Projetos/ProcessamentoImagens/ProcessamentoImagens/main.cpp
+1338007143 source:/home/tiago/Documents/Projetos/ProcessamentoImagens/ProcessamentoImagens/main.cpp
 	<iostream>
-	"include/imagem.h"
+	"include/imagem_opencv.h"
 	"include/excecoes.h"
 	<string.h>
 	"cv.h"
 	"highgui.h"
 
-1337811194 /home/tiago/Documents/Projetos/ProcessamentoImagens/ProcessamentoImagens/include/imagem.h
+1338006647 /home/tiago/Documents/Projetos/ProcessamentoImagens/ProcessamentoImagens/include/imagem.h
 	<string>
 	"cv.h"
 
-1337744729 /home/tiago/Documents/Projetos/ProcessamentoImagens/ProcessamentoImagens/include/excecoes.h
+1338006592 /home/tiago/Documents/Projetos/ProcessamentoImagens/ProcessamentoImagens/include/excecoes.h
 
 1337744479 source:/home/tiago/Documents/Projetos/ProcessamentoImagens/ProcessamentoImagens/classes/excecoes.cpp
 	"../include/excecoes.h"
 
-1337813568 source:/home/tiago/Documents/Projetos/ProcessamentoImagens/ProcessamentoImagens/classes/imagem.cpp
+1338006632 source:/home/tiago/Documents/Projetos/ProcessamentoImagens/ProcessamentoImagens/classes/imagem.cpp
+	"../include/imagem.h"
+
+1338006534 source:/home/tiago/Documents/Projetos/ProcessamentoImagens/ProcessamentoImagens/classes/imagem_opencv.cpp
 	"cv.h"
 	"highgui.h"
-	"../include/imagem.h"
+	"../include/imagem_opencv.h"
 	"../include/excecoes.h"
+
+1338006550 /home/tiago/Documents/Projetos/ProcessamentoImagens/ProcessamentoImagens/include/imagem_opencv.h
+	"imagem.h"
 

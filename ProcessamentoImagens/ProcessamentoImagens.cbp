@@ -36,8 +36,10 @@
 		</Compiler>
 		<Unit filename="classes/excecoes.cpp" />
 		<Unit filename="classes/imagem.cpp" />
+		<Unit filename="classes/imagem_opencv.cpp" />
 		<Unit filename="include/excecoes.h" />
 		<Unit filename="include/imagem.h" />
+		<Unit filename="include/imagem_opencv.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
