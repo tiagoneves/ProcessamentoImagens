@@ -13,15 +13,15 @@ class ImagemMagick : public Imagem{
 
         ImagemMagick(const char* caminho);
 
-        virtual void redimensionar(int fatorX, int fatorY) const ;
+        virtual void redimensionar(int fatorX, int fatorY) const;
 
         virtual void salvar() const;
 
-        virtual void converter(const string output) const ;
+        virtual void converter(const string output)const;
 
-        virtual void crop(double cx, double cy, int width, int height) const ;
+        virtual void crop(double cx, double cy, int width, int height)const;
 
-        virtual void rotacionar(double cx, double cy, double angulo) const ;
+        virtual void rotacionar(double cx, double cy, double angulo)const;
 
 };
 
