@@ -22,12 +22,15 @@ ImagemOpenCV::ImagemOpenCV(const char* caminho) : Imagem (caminho){
 
 }
 
-void ImagemOpenCV::redimensionar(int x, int y) const{
+void ImagemOpenCV::redimensionar(int fatorX, int fatorY) const{
 
     //double x = nWidth - width;
     //double y = nHeight - heigh;
 
-    resize(matriz, matProc, Size(x, y));
+    double novaLargura = width * fatorX;
+    double novaAltura = width * fatorY;
+
+    resize(matriz, matProc, Size(novaLargura,  novaLargura));
 
     salvar();
 

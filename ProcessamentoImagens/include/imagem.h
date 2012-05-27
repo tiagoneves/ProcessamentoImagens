@@ -2,20 +2,14 @@
 #define IMAGEM_H
 
 #include <string>
-#include "cv.h"
 
 using namespace std;
-using namespace cv;
 
 class Imagem {
 
     protected:
 
         const char* local;
-
-        IplImage *pImg;
-
-        Mat matriz;
 
         int width;
 
@@ -27,7 +21,7 @@ class Imagem {
 
         const char* getLocal() const;
 
-        virtual void redimensionar(int x, int y) const = 0;;
+        virtual void redimensionar(int fatorX, int fatorY) const = 0;;
 
         virtual void salvar() const = 0;
 

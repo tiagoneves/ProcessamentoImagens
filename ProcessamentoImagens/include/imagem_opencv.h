@@ -2,8 +2,10 @@
 #define IMAGEM_OPENCV_H
 
 #include "imagem.h"
+#include "cv.h"
 
 using namespace std;
+using namespace cv;
 
 class ImagemOpenCV : public Imagem{
 

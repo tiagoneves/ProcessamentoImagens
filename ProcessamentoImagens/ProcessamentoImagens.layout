@@ -7,16 +7,25 @@
 	<File name="classes/imagem.cpp" open="1" top="0" tabpos="6">
 		<Cursor position="135" topLine="0" />
 	</File>
+	<File name="classes/imagem_magick.cpp" open="1" top="0" tabpos="8">
+		<Cursor position="347" topLine="0" />
+	</File>
 	<File name="classes/imagem_opencv.cpp" open="1" top="0" tabpos="5">
-		<Cursor position="555" topLine="17" />
+		<Cursor position="260" topLine="0" />
 	</File>
 	<File name="include/excecoes.h" open="1" top="0" tabpos="3">
 		<Cursor position="225" topLine="0" />
 	</File>
 	<File name="include/imagem.h" open="1" top="0" tabpos="4">
-		<Cursor position="270" topLine="8" />
+		<Cursor position="134" topLine="0" />
 	</File>
-	<File name="main.cpp" open="1" top="1" tabpos="1">
-		<Cursor position="751" topLine="23" />
+	<File name="include/imagem_magick.h" open="1" top="0" tabpos="7">
+		<Cursor position="191" topLine="0" />
+	</File>
+	<File name="include/imagem_opencv.h" open="1" top="0" tabpos="9">
+		<Cursor position="181" topLine="0" />
+	</File>
+	<File name="main.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="349" topLine="0" />
 	</File>
 </CodeBlocks_layout_file>
