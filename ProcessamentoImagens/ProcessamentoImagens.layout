@@ -2,16 +2,16 @@
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
 	<File name="classes/excecoes.cpp" open="1" top="0" tabpos="2">
-		<Cursor position="218" topLine="2" />
+		<Cursor position="218" topLine="0" />
 	</File>
 	<File name="classes/imagem.cpp" open="1" top="0" tabpos="6">
 		<Cursor position="115" topLine="0" />
 	</File>
 	<File name="classes/imagem_magick.cpp" open="1" top="0" tabpos="8">
-		<Cursor position="345" topLine="0" />
+		<Cursor position="165" topLine="0" />
 	</File>
-	<File name="classes/imagem_opencv.cpp" open="1" top="0" tabpos="5">
-		<Cursor position="260" topLine="0" />
+	<File name="classes/imagem_opencv.cpp" open="1" top="1" tabpos="5">
+		<Cursor position="402" topLine="0" />
 	</File>
 	<File name="include/excecoes.h" open="1" top="0" tabpos="3">
 		<Cursor position="225" topLine="0" />
@@ -19,8 +19,8 @@
 	<File name="include/imagem.h" open="1" top="0" tabpos="4">
 		<Cursor position="134" topLine="0" />
 	</File>
-	<File name="include/imagem_magick.h" open="1" top="1" tabpos="7">
-		<Cursor position="165" topLine="0" />
+	<File name="include/imagem_magick.h" open="1" top="0" tabpos="7">
+		<Cursor position="588" topLine="0" />
 	</File>
 	<File name="include/imagem_opencv.h" open="1" top="0" tabpos="9">
 		<Cursor position="181" topLine="0" />

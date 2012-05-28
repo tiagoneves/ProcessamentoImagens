@@ -35,13 +35,13 @@
 	"imagem.h"
 	<Magick++.h>
 
-1338141980 /usr/local/include/ImageMagick/Magick++.h
+1338213831 /usr/local/include/ImageMagick/Magick++.h
 	<Magick++/Include.h>
 	<Magick++/Image.h>
 	<Magick++/Pixels.h>
 	<Magick++/STL.h>
 
-1338141980 /usr/local/include/ImageMagick/Magick++/Include.h
+1338213831 /usr/local/include/ImageMagick/Magick++/Include.h
 	"magick/magick-config.h"
 	"magick-config.h"
 	<stdio.h>
@@ -53,9 +53,9 @@
 	<magick/MagickCore.h>
 	<wand/MagickWand.h>
 
-1338141980 /usr/local/include/ImageMagick/magick/magick-config.h
+1338213831 /usr/local/include/ImageMagick/magick/magick-config.h
 
-1338141980 /usr/local/include/ImageMagick/magick/MagickCore.h
+1338213831 /usr/local/include/ImageMagick/magick/MagickCore.h
 	"magick/magick-config.h"
 	"magick-config.h"
 	<stdio.h>
@@ -147,33 +147,33 @@
 	"magick/xml-tree.h"
 	"magick/xwindow.h"
 
-1338141980 /usr/local/include/ImageMagick/magick/method-attribute.h
+1338213831 /usr/local/include/ImageMagick/magick/method-attribute.h
 
-1338141980 /usr/local/include/ImageMagick/magick/methods.h
+1338213831 /usr/local/include/ImageMagick/magick/methods.h
 
-1338141980 /usr/local/include/ImageMagick/magick/magick-type.h
+1338213831 /usr/local/include/ImageMagick/magick/magick-type.h
 	"magick/magick-config.h"
 
-1338141980 /usr/local/include/ImageMagick/magick/accelerate.h
+1338213831 /usr/local/include/ImageMagick/magick/accelerate.h
 	<magick/morphology.h>
 
-1338141980 /usr/local/include/ImageMagick/magick/morphology.h
+1338213831 /usr/local/include/ImageMagick/magick/morphology.h
 	<magick/geometry.h>
 
-1338141980 /usr/local/include/ImageMagick/magick/geometry.h
+1338213831 /usr/local/include/ImageMagick/magick/geometry.h
 
-1338141980 /usr/local/include/ImageMagick/magick/animate.h
+1338213831 /usr/local/include/ImageMagick/magick/animate.h
 
-1338141980 /usr/local/include/ImageMagick/magick/annotate.h
+1338213831 /usr/local/include/ImageMagick/magick/annotate.h
 	"magick/draw.h"
 
-1338141980 /usr/local/include/ImageMagick/magick/draw.h
+1338213831 /usr/local/include/ImageMagick/magick/draw.h
 	"magick/geometry.h"
 	"magick/image.h"
 	"magick/pixel.h"
 	"magick/type.h"
 
-1338141980 /usr/local/include/ImageMagick/magick/image.h
+1338213831 /usr/local/include/ImageMagick/magick/image.h
 	<magick/color.h>
 	"magick/blob.h"
 	"magick/colorspace.h"
@@ -195,97 +195,97 @@
 	"magick/stream.h"
 	"magick/timer.h"
 
-1338141980 /usr/local/include/ImageMagick/magick/color.h
+1338213831 /usr/local/include/ImageMagick/magick/color.h
 	<magick/pixel.h>
 	<magick/exception.h>
 
-1338141980 /usr/local/include/ImageMagick/magick/pixel.h
+1338213831 /usr/local/include/ImageMagick/magick/pixel.h
 	<magick/colorspace.h>
 	<magick/constitute.h>
 
-1338141980 /usr/local/include/ImageMagick/magick/colorspace.h
+1338213831 /usr/local/include/ImageMagick/magick/colorspace.h
 
-1338141980 /usr/local/include/ImageMagick/magick/constitute.h
+1338213831 /usr/local/include/ImageMagick/magick/constitute.h
 
-1338141980 /usr/local/include/ImageMagick/magick/exception.h
+1338213831 /usr/local/include/ImageMagick/magick/exception.h
 	<stdarg.h>
 	"magick/semaphore.h"
 
-1338141980 /usr/local/include/ImageMagick/magick/semaphore.h
+1338213831 /usr/local/include/ImageMagick/magick/semaphore.h
 
-1338141980 /usr/local/include/ImageMagick/magick/blob.h
+1338213831 /usr/local/include/ImageMagick/magick/blob.h
 	"magick/image.h"
 	"magick/stream.h"
 
-1338141980 /usr/local/include/ImageMagick/magick/stream.h
+1338213831 /usr/local/include/ImageMagick/magick/stream.h
 
-1338141980 /usr/local/include/ImageMagick/magick/cache-view.h
+1338213831 /usr/local/include/ImageMagick/magick/cache-view.h
 	"magick/pixel.h"
 
-1338141980 /usr/local/include/ImageMagick/magick/composite.h
+1338213831 /usr/local/include/ImageMagick/magick/composite.h
 
-1338141980 /usr/local/include/ImageMagick/magick/compress.h
+1338213831 /usr/local/include/ImageMagick/magick/compress.h
 
-1338141980 /usr/local/include/ImageMagick/magick/effect.h
+1338213831 /usr/local/include/ImageMagick/magick/effect.h
 	<magick/morphology.h>
 
-1338141980 /usr/local/include/ImageMagick/magick/layer.h
+1338213831 /usr/local/include/ImageMagick/magick/layer.h
 
-1338141980 /usr/local/include/ImageMagick/magick/locale_.h
+1338213831 /usr/local/include/ImageMagick/magick/locale_.h
 	"magick/hashmap.h"
 
-1338141980 /usr/local/include/ImageMagick/magick/hashmap.h
+1338213831 /usr/local/include/ImageMagick/magick/hashmap.h
 
-1338141980 /usr/local/include/ImageMagick/magick/monitor.h
+1338213831 /usr/local/include/ImageMagick/magick/monitor.h
 
-1338141980 /usr/local/include/ImageMagick/magick/profile.h
+1338213831 /usr/local/include/ImageMagick/magick/profile.h
 	"magick/string_.h"
 
-1338141980 /usr/local/include/ImageMagick/magick/string_.h
+1338213831 /usr/local/include/ImageMagick/magick/string_.h
 	<stdarg.h>
 	<time.h>
 	"magick/exception.h"
 
-1338141980 /usr/local/include/ImageMagick/magick/quantum.h
+1338213831 /usr/local/include/ImageMagick/magick/quantum.h
 	"magick/semaphore.h"
 
-1338141980 /usr/local/include/ImageMagick/magick/resample.h
+1338213831 /usr/local/include/ImageMagick/magick/resample.h
 	<magick/cache-view.h>
 
-1338141980 /usr/local/include/ImageMagick/magick/resize.h
+1338213831 /usr/local/include/ImageMagick/magick/resize.h
 
-1338141980 /usr/local/include/ImageMagick/magick/timer.h
+1338213831 /usr/local/include/ImageMagick/magick/timer.h
 
-1338141980 /usr/local/include/ImageMagick/magick/type.h
+1338213831 /usr/local/include/ImageMagick/magick/type.h
 
-1338141980 /usr/local/include/ImageMagick/magick/artifact.h
+1338213831 /usr/local/include/ImageMagick/magick/artifact.h
 
-1338141980 /usr/local/include/ImageMagick/magick/attribute.h
+1338213831 /usr/local/include/ImageMagick/magick/attribute.h
 	<magick/image.h>
 	<magick/exception.h>
 
-1338141980 /usr/local/include/ImageMagick/magick/cache.h
+1338213831 /usr/local/include/ImageMagick/magick/cache.h
 	"magick/blob.h"
 
-1338141980 /usr/local/include/ImageMagick/magick/cipher.h
+1338213831 /usr/local/include/ImageMagick/magick/cipher.h
 
-1338141980 /usr/local/include/ImageMagick/magick/client.h
+1338213831 /usr/local/include/ImageMagick/magick/client.h
 
-1338141980 /usr/local/include/ImageMagick/magick/coder.h
+1338213831 /usr/local/include/ImageMagick/magick/coder.h
 
-1338141980 /usr/local/include/ImageMagick/magick/colormap.h
+1338213831 /usr/local/include/ImageMagick/magick/colormap.h
 
-1338141980 /usr/local/include/ImageMagick/magick/compare.h
+1338213831 /usr/local/include/ImageMagick/magick/compare.h
 	"magick/image.h"
 
-1338141980 /usr/local/include/ImageMagick/magick/configure.h
+1338213831 /usr/local/include/ImageMagick/magick/configure.h
 	"magick/hashmap.h"
 
-1338141980 /usr/local/include/ImageMagick/magick/decorate.h
+1338213831 /usr/local/include/ImageMagick/magick/decorate.h
 
-1338141980 /usr/local/include/ImageMagick/magick/delegate.h
+1338213831 /usr/local/include/ImageMagick/magick/delegate.h
 
-1338141980 /usr/local/include/ImageMagick/magick/deprecate.h
+1338213831 /usr/local/include/ImageMagick/magick/deprecate.h
 	<stdarg.h>
 	"magick/blob.h"
 	"magick/cache-view.h"
@@ -298,102 +298,102 @@
 	"magick/registry.h"
 	"magick/semaphore.h"
 
-1338141980 /usr/local/include/ImageMagick/magick/quantize.h
+1338213831 /usr/local/include/ImageMagick/magick/quantize.h
 	"magick/colorspace.h"
 
-1338141980 /usr/local/include/ImageMagick/magick/registry.h
+1338213831 /usr/local/include/ImageMagick/magick/registry.h
 
-1338141980 /usr/local/include/ImageMagick/magick/display.h
+1338213831 /usr/local/include/ImageMagick/magick/display.h
 
-1338141980 /usr/local/include/ImageMagick/magick/distort.h
+1338213831 /usr/local/include/ImageMagick/magick/distort.h
 
-1338141980 /usr/local/include/ImageMagick/magick/enhance.h
+1338213831 /usr/local/include/ImageMagick/magick/enhance.h
 
-1338141980 /usr/local/include/ImageMagick/magick/feature.h
+1338213831 /usr/local/include/ImageMagick/magick/feature.h
 
-1338141980 /usr/local/include/ImageMagick/magick/fourier.h
+1338213831 /usr/local/include/ImageMagick/magick/fourier.h
 
-1338141980 /usr/local/include/ImageMagick/magick/fx.h
+1338213831 /usr/local/include/ImageMagick/magick/fx.h
 	"magick/draw.h"
 
-1338141980 /usr/local/include/ImageMagick/magick/gem.h
+1338213831 /usr/local/include/ImageMagick/magick/gem.h
 	<magick/fx.h>
 	<magick/random_.h>
 
-1338141980 /usr/local/include/ImageMagick/magick/random_.h
+1338213831 /usr/local/include/ImageMagick/magick/random_.h
 	"magick/string_.h"
 
-1338141980 /usr/local/include/ImageMagick/magick/histogram.h
+1338213831 /usr/local/include/ImageMagick/magick/histogram.h
 
-1338141980 /usr/local/include/ImageMagick/magick/identify.h
+1338213831 /usr/local/include/ImageMagick/magick/identify.h
 
-1338141980 /usr/local/include/ImageMagick/magick/image-view.h
+1338213831 /usr/local/include/ImageMagick/magick/image-view.h
 
-1338141980 /usr/local/include/ImageMagick/magick/list.h
+1338213831 /usr/local/include/ImageMagick/magick/list.h
 
-1338141980 /usr/local/include/ImageMagick/magick/log.h
+1338213831 /usr/local/include/ImageMagick/magick/log.h
 	<stdarg.h>
 	"magick/exception.h"
 
-1338141980 /usr/local/include/ImageMagick/magick/magic.h
+1338213831 /usr/local/include/ImageMagick/magick/magic.h
 
-1338141980 /usr/local/include/ImageMagick/magick/magick.h
+1338213831 /usr/local/include/ImageMagick/magick/magick.h
 
-1338141980 /usr/local/include/ImageMagick/magick/matrix.h
+1338213831 /usr/local/include/ImageMagick/magick/matrix.h
 
-1338141980 /usr/local/include/ImageMagick/magick/memory_.h
+1338213831 /usr/local/include/ImageMagick/magick/memory_.h
 
-1338141980 /usr/local/include/ImageMagick/magick/module.h
+1338213831 /usr/local/include/ImageMagick/magick/module.h
 	<time.h>
 	"magick/version.h"
 
-1338141980 /usr/local/include/ImageMagick/magick/version.h
+1338213831 /usr/local/include/ImageMagick/magick/version.h
 
-1338141980 /usr/local/include/ImageMagick/magick/mime.h
+1338213831 /usr/local/include/ImageMagick/magick/mime.h
 
-1338141980 /usr/local/include/ImageMagick/magick/montage.h
+1338213831 /usr/local/include/ImageMagick/magick/montage.h
 
-1338141980 /usr/local/include/ImageMagick/magick/option.h
+1338213831 /usr/local/include/ImageMagick/magick/option.h
 
-1338141980 /usr/local/include/ImageMagick/magick/paint.h
+1338213831 /usr/local/include/ImageMagick/magick/paint.h
 	"magick/color.h"
 	"magick/draw.h"
 
-1338141980 /usr/local/include/ImageMagick/magick/policy.h
+1338213831 /usr/local/include/ImageMagick/magick/policy.h
 	<magick/pixel.h>
 	<magick/exception.h>
 
-1338141980 /usr/local/include/ImageMagick/magick/prepress.h
+1338213831 /usr/local/include/ImageMagick/magick/prepress.h
 
-1338141980 /usr/local/include/ImageMagick/magick/property.h
+1338213831 /usr/local/include/ImageMagick/magick/property.h
 
-1338141980 /usr/local/include/ImageMagick/magick/resource_.h
+1338213831 /usr/local/include/ImageMagick/magick/resource_.h
 
-1338141980 /usr/local/include/ImageMagick/magick/segment.h
+1338213831 /usr/local/include/ImageMagick/magick/segment.h
 
-1338141980 /usr/local/include/ImageMagick/magick/shear.h
+1338213831 /usr/local/include/ImageMagick/magick/shear.h
 
-1338141980 /usr/local/include/ImageMagick/magick/signature.h
+1338213831 /usr/local/include/ImageMagick/magick/signature.h
 
-1338141980 /usr/local/include/ImageMagick/magick/splay-tree.h
+1338213831 /usr/local/include/ImageMagick/magick/splay-tree.h
 
-1338141980 /usr/local/include/ImageMagick/magick/statistic.h
+1338213831 /usr/local/include/ImageMagick/magick/statistic.h
 
-1338141980 /usr/local/include/ImageMagick/magick/token.h
+1338213831 /usr/local/include/ImageMagick/magick/token.h
 
-1338141980 /usr/local/include/ImageMagick/magick/transform.h
+1338213831 /usr/local/include/ImageMagick/magick/transform.h
 
-1338141980 /usr/local/include/ImageMagick/magick/threshold.h
+1338213831 /usr/local/include/ImageMagick/magick/threshold.h
 
-1338141980 /usr/local/include/ImageMagick/magick/utility.h
+1338213831 /usr/local/include/ImageMagick/magick/utility.h
 
-1338141980 /usr/local/include/ImageMagick/magick/xml-tree.h
+1338213831 /usr/local/include/ImageMagick/magick/xml-tree.h
 	<magick/exception.h>
 	<magick/splay-tree.h>
 
-1338141980 /usr/local/include/ImageMagick/magick/xwindow.h
+1338213831 /usr/local/include/ImageMagick/magick/xwindow.h
 
-1338141980 /usr/local/include/ImageMagick/wand/MagickWand.h
+1338213832 /usr/local/include/ImageMagick/wand/MagickWand.h
 	"magick/magick-config.h"
 	"magick-config.h"
 	<stdio.h>
@@ -421,55 +421,55 @@
 	"wand/stream.h"
 	"wand/wand-view.h"
 
-1338141980 /usr/local/include/ImageMagick/wand/method-attribute.h
+1338213832 /usr/local/include/ImageMagick/wand/method-attribute.h
 
-1338141980 /usr/local/include/ImageMagick/wand/animate.h
+1338213832 /usr/local/include/ImageMagick/wand/animate.h
 
-1338141980 /usr/local/include/ImageMagick/wand/compare.h
+1338213832 /usr/local/include/ImageMagick/wand/compare.h
 
-1338141980 /usr/local/include/ImageMagick/wand/composite.h
+1338213832 /usr/local/include/ImageMagick/wand/composite.h
 
-1338141980 /usr/local/include/ImageMagick/wand/conjure.h
+1338213832 /usr/local/include/ImageMagick/wand/conjure.h
 
-1338141980 /usr/local/include/ImageMagick/wand/convert.h
+1338213832 /usr/local/include/ImageMagick/wand/convert.h
 
-1338141980 /usr/local/include/ImageMagick/wand/deprecate.h
+1338213832 /usr/local/include/ImageMagick/wand/deprecate.h
 	"wand/drawing-wand.h"
 	"wand/magick-wand.h"
 	"wand/pixel-iterator.h"
 	"wand/pixel-wand.h"
 
-1338141980 /usr/local/include/ImageMagick/wand/drawing-wand.h
+1338213832 /usr/local/include/ImageMagick/wand/drawing-wand.h
 	"wand/pixel-wand.h"
 
-1338141980 /usr/local/include/ImageMagick/wand/pixel-wand.h
+1338213832 /usr/local/include/ImageMagick/wand/pixel-wand.h
 
-1338141980 /usr/local/include/ImageMagick/wand/magick-wand.h
+1338213832 /usr/local/include/ImageMagick/wand/magick-wand.h
 	"wand/MagickWand.h"
 
-1338141980 /usr/local/include/ImageMagick/wand/pixel-iterator.h
+1338213832 /usr/local/include/ImageMagick/wand/pixel-iterator.h
 	"wand/magick-wand.h"
 	"wand/pixel-wand.h"
 
-1338141980 /usr/local/include/ImageMagick/wand/display.h
+1338213832 /usr/local/include/ImageMagick/wand/display.h
 
-1338141980 /usr/local/include/ImageMagick/wand/identify.h
+1338213832 /usr/local/include/ImageMagick/wand/identify.h
 
-1338141980 /usr/local/include/ImageMagick/wand/import.h
+1338213832 /usr/local/include/ImageMagick/wand/import.h
 
-1338141980 /usr/local/include/ImageMagick/wand/magick-property.h
+1338213832 /usr/local/include/ImageMagick/wand/magick-property.h
 
-1338141980 /usr/local/include/ImageMagick/wand/magick-image.h
+1338213832 /usr/local/include/ImageMagick/wand/magick-image.h
 
-1338141980 /usr/local/include/ImageMagick/wand/mogrify.h
+1338213832 /usr/local/include/ImageMagick/wand/mogrify.h
 
-1338141980 /usr/local/include/ImageMagick/wand/montage.h
+1338213832 /usr/local/include/ImageMagick/wand/montage.h
 
-1338141980 /usr/local/include/ImageMagick/wand/stream.h
+1338213832 /usr/local/include/ImageMagick/wand/stream.h
 
-1338141980 /usr/local/include/ImageMagick/wand/wand-view.h
+1338213832 /usr/local/include/ImageMagick/wand/wand-view.h
 
-1338141980 /usr/local/include/ImageMagick/Magick++/Image.h
+1338213831 /usr/local/include/ImageMagick/Magick++/Image.h
 	"Magick++/Include.h"
 	<string>
 	<list>
@@ -480,15 +480,15 @@
 	"Magick++/Geometry.h"
 	"Magick++/TypeMetric.h"
 
-1338141980 /usr/local/include/ImageMagick/Magick++/Blob.h
+1338213831 /usr/local/include/ImageMagick/Magick++/Blob.h
 	"Magick++/Include.h"
 	<string>
 
-1338141980 /usr/local/include/ImageMagick/Magick++/Color.h
+1338213831 /usr/local/include/ImageMagick/Magick++/Color.h
 	"Magick++/Include.h"
 	<string>
 
-1338141980 /usr/local/include/ImageMagick/Magick++/Drawable.h
+1338213831 /usr/local/include/ImageMagick/Magick++/Drawable.h
 	"Magick++/Include.h"
 	<functional>
 	<string>
@@ -497,24 +497,24 @@
 	"Magick++/Color.h"
 	"Magick++/Geometry.h"
 
-1338141980 /usr/local/include/ImageMagick/Magick++/Geometry.h
+1338213831 /usr/local/include/ImageMagick/Magick++/Geometry.h
 	"Magick++/Include.h"
 	<string>
 
-1338141980 /usr/local/include/ImageMagick/Magick++/Exception.h
+1338213831 /usr/local/include/ImageMagick/Magick++/Exception.h
 	"Magick++/Include.h"
 	<string>
 	<exception>
 
-1338141980 /usr/local/include/ImageMagick/Magick++/TypeMetric.h
+1338213831 /usr/local/include/ImageMagick/Magick++/TypeMetric.h
 	"Magick++/Include.h"
 
-1338141980 /usr/local/include/ImageMagick/Magick++/Pixels.h
+1338213831 /usr/local/include/ImageMagick/Magick++/Pixels.h
 	"Magick++/Include.h"
 	"Magick++/Color.h"
 	"Magick++/Image.h"
 
-1338141980 /usr/local/include/ImageMagick/Magick++/STL.h
+1338213831 /usr/local/include/ImageMagick/Magick++/STL.h
 	"Magick++/Include.h"
 	<algorithm>
 	<functional>
@@ -526,11 +526,11 @@
 	"Magick++/Exception.h"
 	"Magick++/Montage.h"
 
-1338141980 /usr/local/include/ImageMagick/Magick++/CoderInfo.h
+1338213831 /usr/local/include/ImageMagick/Magick++/CoderInfo.h
 	"Magick++/Include.h"
 	<string>
 
-1338141980 /usr/local/include/ImageMagick/Magick++/Montage.h
+1338213831 /usr/local/include/ImageMagick/Magick++/Montage.h
 	"Magick++/Include.h"
 	<string>
 	"Magick++/Color.h"
@@ -912,4 +912,41 @@
 1334015259 /usr/local/include/opencv2/highgui/highgui.hpp
 	"opencv2/core/core.hpp"
 	"opencv2/highgui/highgui_c.h"
+
+1338178111 source:/home/tiago/Documentos/Projetos/Processamento de Imagens/ProcessamentoImagens/classes/excecoes.cpp
+	"../include/excecoes.h"
+
+1338178111 /home/tiago/Documentos/Projetos/Processamento de Imagens/ProcessamentoImagens/include/excecoes.h
+
+1338178111 source:/home/tiago/Documentos/Projetos/Processamento de Imagens/ProcessamentoImagens/classes/imagem.cpp
+	"../include/imagem.h"
+
+1338178111 /home/tiago/Documentos/Projetos/Processamento de Imagens/ProcessamentoImagens/include/imagem.h
+	<string>
+
+1338178111 source:/home/tiago/Documentos/Projetos/Processamento de Imagens/ProcessamentoImagens/classes/imagem_magick.cpp
+	"../include/imagem_magick.h"
+
+1338178111 /home/tiago/Documentos/Projetos/Processamento de Imagens/ProcessamentoImagens/include/imagem_magick.h
+	"imagem.h"
+	<Magick++.h>
+
+1338178111 source:/home/tiago/Documentos/Projetos/Processamento de Imagens/ProcessamentoImagens/classes/imagem_opencv.cpp
+	"cv.h"
+	"highgui.h"
+	"../include/imagem_opencv.h"
+	"../include/excecoes.h"
+
+1338178111 /home/tiago/Documentos/Projetos/Processamento de Imagens/ProcessamentoImagens/include/imagem_opencv.h
+	"imagem.h"
+	"cv.h"
+
+1338232681 source:/home/tiago/Documentos/Projetos/Processamento de Imagens/ProcessamentoImagens/main.cpp
+	<iostream>
+	"include/imagem_opencv.h"
+	"include/imagem_magick.h"
+	"include/excecoes.h"
+	<string.h>
+	"cv.h"
+	"highgui.h"
 

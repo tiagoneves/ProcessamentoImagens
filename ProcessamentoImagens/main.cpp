@@ -1,7 +1,7 @@
 #include <iostream>
 
 #include "include/imagem_opencv.h"
-//#include "include/imagem_magick.h"
+#include "include/imagem_magick.h"
 #include "include/excecoes.h"
 #include <string.h>
 //#include "include/gui/frame.h"
@@ -36,8 +36,8 @@ int main(int argc, char **argv)
 
         if (strcmp(api, "opencv") == 0)
            imagem = new ImagemOpenCV(img);
-	/*else if (strcmp(api, "magic") == 0)
-	   imagem = new ImagemMagick(img);*/
+	else if (strcmp(api, "imagemagick") == 0)
+	   imagem = new ImagemMagick(img);
 
         if (strcmp(argv[2], "redimensionar") == 0){
 

@@ -1,7 +1,7 @@
 #include <iostream>
 
 #include "include/imagem_opencv.h"
-//#include "include/imagem_magick.h"
+#include "include/imagem_magick.h"
 #include "include/excecoes.h"
 #include <string.h>
 //#include "include/gui/frame.h"
