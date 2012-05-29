@@ -31,17 +31,16 @@ void ImagemMagick::salvar() const {
 void ImagemMagick::converter(const string output) const {
 
    //TODO implementar
-	;
 
 }
 
-void ImagemOpenCV::crop(double cx, double cy, int width, int height) const {
+void ImagemMagick::crop(double cx, double cy, int width, int height) const {
 
     //TODO implementar
 
 }
 
-void ImagemOpenCV::rotacionar(double cx, double cy, double angulo) const {
+void ImagemMagick::rotacionar(double cx, double cy, double angulo) const {
 
     //TODO implementar
 
