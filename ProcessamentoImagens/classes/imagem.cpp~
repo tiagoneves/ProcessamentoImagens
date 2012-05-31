@@ -18,7 +18,7 @@ const char* Imagem::getLocal() const{
 
 const char* Imagem::obterNomeArquivo(const char* diretorioSaida) {
 
-	char* nomeRef = strrchr((char*)local, '/');
+	char* nomeRef = strrchr((char*)local, "/");
 
         if (nomeRef == NULL)
 		nomeRef = (char*)local;

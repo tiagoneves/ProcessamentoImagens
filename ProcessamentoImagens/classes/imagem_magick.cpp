@@ -3,19 +3,21 @@
 
 Image imagem;
 
-ImagemMagick::ImagemMagick(const char* caminho) : Imagem (caminho) {
+ImagemMagick::ImagemMagick(const char* caminhoEntrada) : Imagem (caminhoEntrada) {
 
-    const string nomeArquivo(caminho);
+    const string nomeArquivo(caminhoEntrada);
 
     imagem.read(nomeArquivo);
 
 }
 
-void ImagemMagick::redimensionar(int fatorX, int fatorY) const {
+void ImagemMagick::redimensionar(double width, double height) const {
 
-    Geometry geom = imagem.size();
+    //Geometry geom = imagem.size();
 
-    imagem.zoom(Geometry(geom.width() * fatorX, geom.height() * fatorY));
+    //imagem.zoom(Geometry(geom.width() * fatorX, geom.height() * fatorY));
+
+    imagem.resize(Geometry(width, height));
 
     salvar();
 
@@ -24,7 +26,7 @@ void ImagemMagick::redimensionar(int fatorX, int fatorY) const {
 void ImagemMagick::salvar() const {
 
 
-    imagem.write(local);
+    imagem.write(localSaida);
 
 }
 
@@ -36,7 +38,17 @@ void ImagemMagick::converter(const string output) const {
 
 void ImagemMagick::crop(double cx, double cy, int width, int height) const {
 
-    //TODO implementar
+    Geometry geom = imagem.size();
+
+    double xTop = cx - width / 2;
+    double yTop = cy + height / 2;
+    double xBottom = cx + width / 2;
+    double yBottom = cy - height / 2;
+
+    imagem.chop(Geometry(xTop, yTop));
+    imagem.crop(Geometry(xBottom, yBottom));
+    
+    salvar();
 
 }
 

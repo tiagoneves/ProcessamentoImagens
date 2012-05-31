@@ -19,7 +19,7 @@ class ImagemOpenCV : public Imagem{
 
         ImagemOpenCV(const char* caminhoEntrada);
 
-        virtual void redimensionar(double width, double height) const;
+        virtual void redimensionar(int width, int height) const;
 
         virtual void salvar()const;
 

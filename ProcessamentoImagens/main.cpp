@@ -34,12 +34,14 @@ int main(int argc, char **argv)
 
         //ImagemOpenCV imagem(img);
 
-        if (strcmp(api, "opencv") == 0)
+        if (strcmp(api, "opencv") == 0) 
            imagem = new ImagemOpenCV(img);
 	else if (strcmp(api, "imagemagick") == 0)
 	   imagem = new ImagemMagick(img);
 
         if (strcmp(argv[2], "redimensionar") == 0){
+	    
+	    imagem -> setLocalSaida(argv[6]);
 
             int x = atoi(argv[4]);
             int y = atoi(argv[5]);
@@ -47,10 +49,14 @@ int main(int argc, char **argv)
             imagem -> redimensionar(x, y);
 
         } else if (strcmp(argv[2], "converter") == 0){
+            
+            imagem -> setLocalSaida(argv[5]);
 
             imagem -> converter(trocarExtensao(imagem -> getLocal(), argv[4]));
 
         } else if (strcmp(argv[2], "cortar") == 0) {
+
+	    imagem -> setLocalSaida(argv[8]);
 
             double cx = atof(argv[4]);
             double cy = atof(argv[5]);
@@ -61,6 +67,8 @@ int main(int argc, char **argv)
             imagem -> crop(cx, cy, width, height);
 
         } else if (strcmp(argv[2], "rotacionar") == 0) {
+            
+            imagem -> setLocalSaida(argv[7]);
 
             double cx = atof(argv[4]);
             double cy = atof(argv[5]);

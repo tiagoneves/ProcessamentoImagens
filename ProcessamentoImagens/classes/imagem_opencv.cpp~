@@ -22,7 +22,7 @@ ImagemOpenCV::ImagemOpenCV(const char* caminhoEntrada) : Imagem (caminhoEntrada)
 
 }
 
-void ImagemOpenCV::redimensionar(double width, double height) const{
+void ImagemOpenCV::redimensionar(int width, int height) const{
 
     //double x = nWidth - width;
     //double y = nHeight - heigh;
