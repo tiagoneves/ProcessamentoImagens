@@ -11,13 +11,21 @@ ImagemMagick::ImagemMagick(const char* caminhoEntrada) : Imagem (caminhoEntrada)
 
 }
 
-void ImagemMagick::redimensionar(int width, int height) const {
+void ImagemMagick::redimensionar(double width, double height) const {
 
     //Geometry geom = imagem.size();
 
     //imagem.zoom(Geometry(geom.width() * fatorX, geom.height() * fatorY));
 
-    imagem.resize(Geometry(width, height));
+    //double x = geom.width();
+    //double y = geom.height();
+
+    Geometry nSize = Geometry(width, height);
+    //Geometry nSize = Geometry("68x68");
+
+    nSize.aspect(true);
+
+    imagem.resize(nSize);
 
     salvar();
 
