@@ -8,6 +8,10 @@ using namespace std;
 
 class ImagemMatlab : public Imagem{
 
+    private
+
+	Engine *engine;
+
     public:
 
         ImagemMatlab(const char* caminhoEntrada);

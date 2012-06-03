@@ -25,9 +25,3 @@ NotSupportedOperationException::NotSupportedOperationException(const char* msg)
 NotSupportedOperationException::NotSupportedOperationException()
     :BaseException ("Não é possível realizar a operação"){}
 
-ConnectException::ConnectException(const char* msg)
-    :BaseException (msg){}
-
-ConnectException::ConnectException()
-    :BaseException ("Erro de conexão"){}
-

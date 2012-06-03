@@ -3,37 +3,41 @@
 #include "../include/excecoes.h"
 
 
-ImagemOpenCV::ImagemOpenCV(const char* caminhoEntrada)  : Imagem (caminhoEntrada){
+ImagemMatlab::ImagemMatlab(const char* caminhoEntrada)  : Imagem (caminhoEntrada){
+
+    if (!(ep = engOpen("\0"))) 
+		
+	throw ConnectException("Não foi possível conectar-se ao MATLAB");	
+
+    mxArray* mxCaminhoEntrada = 
+
+}
+
+void ImagemMatlab::redimensionar(double width, double height) const{
 
     //TODO
-
 }
 
-void ImagemOpenCV::redimensionar(double width, double height) const{
-
-    //TODO
-}
-
-void ImagemOpenCV::converter(const string output) const{
+void ImagemMatlab::converter(const string output) const{
 
    //TODO
 
 }
 
-void ImagemOpenCV::crop(double cx, double cy, int width, int height)const{
+void ImagemMatlab::crop(double cx, double cy, int width, int height)const{
 
    //TODO
 
 }
 
-void ImagemOpenCV::rotacionar(double cx, double cy, double angulo) const{
+void ImagemMatlab::rotacionar(double cx, double cy, double angulo) const{
 
    //TODO
 
 
 }
 
-void ImagemOpenCV::salvar(const char* localSaida) const {
+void ImagemMatlab::salvar(const char* localSaida) const {
 
     //TODO
 

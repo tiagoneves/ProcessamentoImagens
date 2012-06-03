@@ -25,4 +25,4 @@ class ImagemMatlab : public Imagem{
 };
 
 
-#endif // IMAGEM_OPENCV_H
+#endif // IMAGEM_MATLAB_H

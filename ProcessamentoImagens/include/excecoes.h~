@@ -38,15 +38,5 @@ class NotSupportedOperationException : public BaseException {
 
 };
 
-class ConnectException : public BaseException {
-
-    public:
-
-        ConnectException();
-
-        ConnectException(const char* msg);
-
-}
-
 
 #endif
