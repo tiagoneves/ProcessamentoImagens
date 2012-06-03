@@ -11,13 +11,13 @@ class Imagem {
 
         const char* local;
 
-	const char* localSaida;
-
         int width;
 
         int height;
 	
 	const char* obterNomeArquivo(const char* diretorioSaida);
+
+	const char* obterLocalSaida(const char* diretorioSaida);
 
     public:
 
@@ -27,9 +27,9 @@ class Imagem {
 	
 	void setLocalSaida(const char* diretorioSaida);
 
-        virtual void redimensionar(int width, int height) const = 0;;
+        virtual void redimensionar(double width, double height) const = 0;;
 
-        virtual void salvar() const = 0;
+        virtual void salvar(const char* localSaida) const = 0;
 
         virtual void converter(const string output) const = 0;
 

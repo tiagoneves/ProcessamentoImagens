@@ -12,46 +12,51 @@ int Comum::operar(char **argv)
 
     try {
 
-	char* operacao = argv[1];	
+	char* operacao = argv[1];
+	const char* diretorioSaida;
 
         if (strcmp(operacao, "redimensionar") == 0){
 	    
-	    imagem -> setLocalSaida(argv[5]);
+	    localSaida = argv[5];
 
-            int x = std::atoi(argv[3]);
-            int y = std::atoi(argv[4]);
+            int x = atoi(argv[3]);
+            int y = atoi(argv[4]);
 
             imagem -> redimensionar(x, y);
 
         } else if (strcmp(operacao, "converter") == 0){
             
-            imagem -> setLocalSaida(argv[4]);
+            localSaida = argv[4];
 
             imagem -> converter(trocarExtensao(imagem -> getLocal(), argv[4]));
 
         } else if (strcmp(operacao, "cortar") == 0) {
 
-	    imagem -> setLocalSaida(argv[7]);
+	    localSaida = argv[7];
 
-            double cx = std::atof(argv[3]);
-            double cy = std::atof(argv[4]);
+            double cx = atof(argv[3]);
+            double cy = atof(argv[4]);
 
-            int width = std::atoi(argv[5]);
-            int height = std::atoi(argv[6]);
+            int width = atoi(argv[5]);
+            int height = atoi(argv[6]);
 
             imagem -> crop(cx, cy, width, height);
 
         } else if (strcmp(operacao, "rotacionar") == 0) {
             
-            imagem -> setLocalSaida(argv[6]);
+            localSaida = argv[6];
 
-            double cx = std::atof(argv[3]);
-            double cy = std::atof(argv[4]);
-            double angulo = std::atof(argv[5]);
+            double cx = atof(argv[3]);
+            double cy = atof(argv[4]);
+            double angulo = atof(argv[5]);
 
             imagem -> rotacionar(cx, cy, angulo);
 
         }
+
+	const char* localSaida = obterLocalSaida(diretorioSaida);   
+
+	imagem -> salvar(localSaida);
 
     }catch(FileNotFoundException fnf) {
 

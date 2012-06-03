@@ -27,13 +27,10 @@ void ImagemMagick::redimensionar(double width, double height) const {
 
     imagem.resize(nSize);
 
-    salvar();
-
 }
 
-void ImagemMagick::salvar() const {
-
-
+void ImagemMagick::salvar(const char* localSaida) const {
+ 
     imagem.write(localSaida);
 
 }

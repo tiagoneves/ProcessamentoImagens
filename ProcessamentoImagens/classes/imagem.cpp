@@ -8,6 +8,7 @@ Imagem::Imagem(const char* caminhoEntrada) {
 
     local = caminhoEntrada;
 
+
 }
 
 const char* Imagem::getLocal() const{
@@ -29,7 +30,7 @@ const char* Imagem::obterNomeArquivo(const char* diretorioSaida) {
 
 }
 
-void Imagem::setLocalSaida(const char* diretorioSaida) {
+const char* Imagem::obterLocalSaida(const char* diretorioSaida) {
 
 	string nomeArquivo(obterNomeArquivo(diretorioSaida));
 
@@ -37,6 +38,7 @@ void Imagem::setLocalSaida(const char* diretorioSaida) {
 
 	dirSaidaStr += "/" + nomeArquivo;
 
-	localSaida = dirSaidaStr.data();
-;
+	return dirSaidaStr.data();
+
+
 }

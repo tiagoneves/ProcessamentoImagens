@@ -12,11 +12,12 @@ int Comum::operar(char **argv)
 
     try {
 
-	char* operacao = argv[1];	
+	char* operacao = argv[1];
+	const char* diretorioSaida;
 
         if (strcmp(operacao, "redimensionar") == 0){
 	    
-	    imagem -> setLocalSaida(argv[5]);
+	    diretorioSaida = argv[5];
 
             int x = atoi(argv[3]);
             int y = atoi(argv[4]);
@@ -25,13 +26,13 @@ int Comum::operar(char **argv)
 
         } else if (strcmp(operacao, "converter") == 0){
             
-            imagem -> setLocalSaida(argv[4]);
+            diretorioSaida = argv[4];
 
             imagem -> converter(trocarExtensao(imagem -> getLocal(), argv[4]));
 
         } else if (strcmp(operacao, "cortar") == 0) {
 
-	    imagem -> setLocalSaida(argv[7]);
+	    diretorioSaida = argv[7];
 
             double cx = atof(argv[3]);
             double cy = atof(argv[4]);
@@ -43,7 +44,7 @@ int Comum::operar(char **argv)
 
         } else if (strcmp(operacao, "rotacionar") == 0) {
             
-            imagem -> setLocalSaida(argv[6]);
+            diretorioSaida = argv[6];
 
             double cx = atof(argv[3]);
             double cy = atof(argv[4]);
@@ -52,6 +53,10 @@ int Comum::operar(char **argv)
             imagem -> rotacionar(cx, cy, angulo);
 
         }
+
+	const char* localSaida = imagem -> obterLocalSaida(diretorioSaida);   
+
+	imagem -> salvar(localSaida);
 
     }catch(FileNotFoundException fnf) {
 

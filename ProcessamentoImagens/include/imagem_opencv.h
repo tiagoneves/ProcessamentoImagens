@@ -21,13 +21,13 @@ class ImagemOpenCV : public Imagem{
 
         virtual void redimensionar(double width, double height) const;
 
-        virtual void salvar()const;
+        virtual void salvar(const char* localSaida) const;
 
-        virtual void converter(const string output)const;
+        virtual void converter(const string output) const;
 
-        virtual void crop(double cx, double cy, int width, int height)const;
+        virtual void crop(double cx, double cy, int width, int height) const;
 
-        virtual void rotacionar(double cx, double cy, double angulo)const;
+        virtual void rotacionar(double cx, double cy, double angulo) const;
 
 };
 

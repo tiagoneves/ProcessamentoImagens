@@ -19,15 +19,15 @@ class ImagemOpenCV : public Imagem{
 
         ImagemOpenCV(const char* caminhoEntrada);
 
-        virtual void redimensionar(int width, int height) const;
+        virtual void redimensionar(double width, double height) const;
 
-        virtual void salvar()const;
+        virtual void salvar(const char* diretorioSaida) const;
 
-        virtual void converter(const string output)const;
+        virtual void converter(const string output) const;
 
-        virtual void crop(double cx, double cy, int width, int height)const;
+        virtual void crop(double cx, double cy, int width, int height) const;
 
-        virtual void rotacionar(double cx, double cy, double angulo)const;
+        virtual void rotacionar(double cx, double cy, double angulo) const;
 
 };
 

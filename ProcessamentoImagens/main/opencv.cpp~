@@ -5,12 +5,12 @@
 #include "../include/imagem_opencv.h"
 #include "../include/excecoes.h"
 
-#include "comum.h"
+#include "../include/comum.h"
 
 int main(int argc, char **argv) {
 
 
-	Imagem *imagem = new ImagemOpenCV(argv[2]);
+	Imagem *imagem = new ImagemOpenCV(argv[2], arg);
 
 	Comum comum(imagem);
 

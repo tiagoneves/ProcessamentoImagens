@@ -6,7 +6,7 @@
 
 Mat matProc;
 
-ImagemOpenCV::ImagemOpenCV(const char* caminhoEntrada) : Imagem (caminhoEntrada){
+ImagemOpenCV::ImagemOpenCV(const char* caminhoEntrada)  : Imagem (caminhoEntrada){
 
     if (pImg = cvLoadImage(caminhoEntrada, 1)){
 
@@ -32,8 +32,6 @@ void ImagemOpenCV::redimensionar(double width, double height) const{
 
     resize(matriz, matProc, Size(width,  height));
 
-    salvar();
-
 }
 
 void ImagemOpenCV::converter(const string output) const{
@@ -53,8 +51,6 @@ void ImagemOpenCV::crop(double cx, double cy, int width, int height)const{
     if (rect.contains(centro)) {
 
         getRectSubPix(matriz, Size(width, height), centro, matProc);
-
-        salvar();
 
     } else
 
@@ -84,11 +80,10 @@ void ImagemOpenCV::rotacionar(double cx, double cy, double angulo) const{
 
     //transform(matriz, matProc, matRot);
 
-    salvar();
 
 }
 
-void ImagemOpenCV::salvar() const{
+void ImagemOpenCV::salvar(const char* localSaida) const {
 
     imwrite(localSaida, matProc);
 
