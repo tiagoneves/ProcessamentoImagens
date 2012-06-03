@@ -1,13 +1,13 @@
 
-#include <iostream>
-
-#include "include/imagem_opencv.h"
-#include "include/imagem_magick.h"
-#include "include/excecoes.h"
-#include <string.h>
-
 #ifndef COMUM_H
 #define COMUM_H
+
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+#include "imagem.h"
+#include "excecoes.h"
 
 using namespace std;
 
@@ -30,6 +30,6 @@ class Comum {
 
 	string adicionarExtensao(string src, const char* ext);
 
-}
+};
 
 #endif

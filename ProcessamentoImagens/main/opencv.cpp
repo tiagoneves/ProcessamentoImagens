@@ -3,9 +3,9 @@
 #include <string.h>
 
 #include "../include/imagem_opencv.h"
-#include "include/excecoes.h"
+#include "../include/excecoes.h"
 
-#include "comum.h"
+#include "../include/comum.h"
 
 int main(int argc, char **argv) {
 
