@@ -9,8 +9,14 @@ ImagemMatlab::ImagemMatlab(const char* caminhoEntrada)  : Imagem (caminhoEntrada
 		
 	throw ConnectException("Não foi possível conectar-se ao MATLAB");	
 
-    mxArray* mxCaminhoEntrada = 
+    mxArray* mxCaminhoEntrada = mxCreateString(caminhoEntrada);
 
+    memcpy((void *)mxGetPr(mxCaminhoEntrada), (void *)caminhoEntrada, sizeof(caminhoEntrada));
+
+    engPutVariable(ep, "nomeArquivo", mxCaminhoEntrada);
+
+    engEvalString("I = imread(filename)");
+    
 }
 
 void ImagemMatlab::redimensionar(double width, double height) const{

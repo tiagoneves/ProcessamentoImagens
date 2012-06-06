@@ -9,7 +9,11 @@ ImagemMatlab::ImagemMatlab(const char* caminhoEntrada)  : Imagem (caminhoEntrada
 		
 	throw ConnectException("Não foi possível conectar-se ao MATLAB");	
 
-    mxArray *T = 
+    mxArray* mxCaminhoEntrada = mxCreateString(caminhoEntrada);
+
+    memcpy((void *)mxGetPr(mxCaminhoEntrada), (void *)caminhoEntrada, sizeof(char*));
+
+    
 
 }
 
