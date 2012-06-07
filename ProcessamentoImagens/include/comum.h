@@ -2,9 +2,9 @@
 #ifndef COMUM_H
 #define COMUM_H
 
+#include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include <stdlib.h>
 
 #include "imagem.h"
 #include "excecoes.h"

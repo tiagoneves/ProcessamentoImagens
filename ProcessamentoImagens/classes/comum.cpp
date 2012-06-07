@@ -60,15 +60,19 @@ int Comum::operar(char **argv)
 
     }catch(FileNotFoundException fnf) {
 
-        printf("%s", fnf.obterMensagem());
+        //printf("%s", fnf.obterMensagem());
+
+	return 0;
 
     }catch(NotSupportedOperationException nso) {
 
-        printf("%s", nso.obterMensagem());
+        //printf("%s", nso.obterMensagem());
+
+	return 0;
 
     }
 
-    return 0;
+    return 1;
 }
 
 const char* Comum::trocarExtensao(const char* local, const char* extensao) {

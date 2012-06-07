@@ -17,7 +17,7 @@ int Comum::operar(char **argv)
 
         if (strcmp(operacao, "redimensionar") == 0){
 	    
-	    localSaida = argv[5];
+	    diretorioSaida = argv[5];
 
             int x = atoi(argv[3]);
             int y = atoi(argv[4]);
@@ -26,13 +26,13 @@ int Comum::operar(char **argv)
 
         } else if (strcmp(operacao, "converter") == 0){
             
-            localSaida = argv[4];
+            diretorioSaida = argv[4];
 
             imagem -> converter(trocarExtensao(imagem -> getLocal(), argv[4]));
 
         } else if (strcmp(operacao, "cortar") == 0) {
 
-	    localSaida = argv[7];
+	    diretorioSaida = argv[7];
 
             double cx = atof(argv[3]);
             double cy = atof(argv[4]);
@@ -44,7 +44,7 @@ int Comum::operar(char **argv)
 
         } else if (strcmp(operacao, "rotacionar") == 0) {
             
-            localSaida = argv[6];
+            diretorioSaida = argv[6];
 
             double cx = atof(argv[3]);
             double cy = atof(argv[4]);
@@ -54,7 +54,7 @@ int Comum::operar(char **argv)
 
         }
 
-	const char* localSaida = obterLocalSaida(diretorioSaida);   
+	const char* localSaida = imagem -> obterLocalSaida(diretorioSaida);   
 
 	imagem -> salvar(localSaida);
 
@@ -62,13 +62,17 @@ int Comum::operar(char **argv)
 
         printf("%s", fnf.obterMensagem());
 
+	return 0;
+
     }catch(NotSupportedOperationException nso) {
 
         printf("%s", nso.obterMensagem());
 
+	return 0;
+
     }
 
-    return 0;
+    return 1;
 }
 
 const char* Comum::trocarExtensao(const char* local, const char* extensao) {

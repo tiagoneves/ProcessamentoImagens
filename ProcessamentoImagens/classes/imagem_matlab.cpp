@@ -2,26 +2,34 @@
 #include "../include/imagem_matlab.h"
 #include "../include/excecoes.h"
 
-
 ImagemMatlab::ImagemMatlab(const char* caminhoEntrada)  : Imagem (caminhoEntrada){
 
-    if (!(ep = engOpen("\0"))) 
+    if (!(engine = engOpen("\0"))) 
 		
 	throw ConnectException("Não foi possível conectar-se ao MATLAB");	
 
     mxArray* mxCaminhoEntrada = mxCreateString(caminhoEntrada);
 
-    memcpy((void *)mxGetPr(mxCaminhoEntrada), (void *)caminhoEntrada, sizeof(caminhoEntrada));
+    //memcpy((void *)mxGetPr(mxCaminhoEntrada), (void *)caminhoEntrada, sizeof(caminhoEntrada));
 
-    engPutVariable(ep, "nomeArquivo", mxCaminhoEntrada);
+    engPutVariable(engine, "nomeArquivo", mxCaminhoEntrada);
 
-    engEvalString("I = imread(filename)");
+    engEvalString(engine, "A = imread(nomeArquivo)");
     
 }
 
 void ImagemMatlab::redimensionar(double width, double height) const{
+	
+	double size[2] = {width, height};
+	
+	mxArray* mxSize = mxCreateDoubleMatrix(1, 2, mxREAL);
 
-    //TODO
+	memcpy((void *)mxGetPr(mxSize), (void *)size, sizeof(size));
+
+	engPutVariable(engine, "size", mxSize);
+
+	engEvalString(engine, "B = imresize(A, size)");    
+
 }
 
 void ImagemMatlab::converter(const string output) const{
@@ -45,6 +53,12 @@ void ImagemMatlab::rotacionar(double cx, double cy, double angulo) const{
 
 void ImagemMatlab::salvar(const char* localSaida) const {
 
-    //TODO
+     mxArray* mxLocalSaida = mxCreateString(localSaida);
+
+    //memcpy((void *)mxGetPr(mxCaminhoEntrada), (void *)caminhoEntrada, sizeof(caminhoEntrada));
+
+    engPutVariable(engine, "saida", mxLocalSaida);
+
+    engEvalString(engine, "imwrite(B, saida)");  
 
 }

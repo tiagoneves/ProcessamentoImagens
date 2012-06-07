@@ -1,12 +1,18 @@
 #ifndef IMAGEM_MATLAB_H
 #define IMAGEM_MATLAB_H
 
+#include <cstdio>
+
 #include "imagem.h"
 #include "engine.h"
 
 using namespace std;
 
 class ImagemMatlab : public Imagem{
+
+    private:
+
+	Engine *engine;
 
     public:
 

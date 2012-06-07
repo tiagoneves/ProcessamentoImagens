@@ -46,7 +46,7 @@ class ConnectException : public BaseException {
 
         ConnectException(const char* msg);
 
-}
+};
 
 
 #endif
