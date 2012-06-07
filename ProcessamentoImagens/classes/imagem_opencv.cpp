@@ -42,7 +42,12 @@ void ImagemOpenCV::converter(const string output) const{
 
 }
 
-void ImagemOpenCV::crop(double cx, double cy, int width, int height)const{
+void ImagemOpenCV::crop(double xUp, double yUp, int xLow, int yLow)const{
+
+    double width = xLow - xUp;
+    double height = yUp - yLow;
+    double cx = xUp + width / 2;
+    double cy = xLow + height / 2;
 
     Rect rect(cx, cy, width, height);
 

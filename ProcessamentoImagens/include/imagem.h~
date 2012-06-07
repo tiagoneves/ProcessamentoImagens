@@ -17,8 +17,6 @@ class Imagem {
 	
 	const char* obterNomeArquivo(const char* diretorioSaida);
 
-	const char* obterLocalSaida(const char* diretorioSaida);
-
     public:
 
         Imagem(const char* caminhoEntrada);
@@ -26,6 +24,8 @@ class Imagem {
         const char* getLocal() const;
 	
 	void setLocalSaida(const char* diretorioSaida);
+
+        const char* obterLocalSaida(const char* diretorioSaida);
 
         virtual void redimensionar(double width, double height) const = 0;;
 

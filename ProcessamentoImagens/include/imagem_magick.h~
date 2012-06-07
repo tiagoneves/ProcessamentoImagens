@@ -15,7 +15,7 @@ class ImagemMagick : public Imagem{
 
         virtual void redimensionar(double width, double height) const ;
 
-        virtual void salvar(const char* diretorioSaida) const;
+        virtual void salvar(const char* localSaida) const;
 
         virtual void converter(const string output) const ;
 

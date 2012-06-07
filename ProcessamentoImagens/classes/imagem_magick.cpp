@@ -41,7 +41,7 @@ void ImagemMagick::converter(const string output) const {
 
 }
 
-void ImagemMagick::crop(double cx, double cy, int width, int height) const {
+void ImagemMagick::crop(double xUp, double yUp, int xLow, int yLow) const {
 
     //Geometry geom = imagem.size();
 
@@ -50,7 +50,7 @@ void ImagemMagick::crop(double cx, double cy, int width, int height) const {
     //int xBottom = (int) cx + width / 2;
     //int yBottom = (int) cy - height / 2;
   
-    size_t oito = 8;
+   /* size_t oito = 8;
     size_t trinta_oito = 38;
     size_t quarenta_cinco = 45;
     size_t onze = 11;
@@ -58,7 +58,10 @@ void ImagemMagick::crop(double cx, double cy, int width, int height) const {
     imagem.chop(Geometry(oito, trinta_oito));
     imagem.crop(Geometry(quarenta_cinco, onze));
     
-    //salvar();
+    //salvar();*/
+
+    imagem.chop(Geometry(xUp, yUp));
+    imagem.crop(Geometry(xLow, yLow));
 
 }
 

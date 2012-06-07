@@ -1,7 +1,7 @@
 #ifndef IMAGEM_MATLAB_H
 #define IMAGEM_MATLAB_H
 
-#include <cstdio>
+#include <string.h>
 
 #include "imagem.h"
 #include "engine.h"

@@ -42,7 +42,7 @@ void ImagemOpenCV::converter(const string output) const{
 
 }
 
-void ImagemOpenCV::crop(double cx, double cy, int width, int height)const{
+void ImagemOpenCV::crop(double xUp, double yUp, int xLow, int yLow)const{
 
     Rect rect(cx, cy, width, height);
 
@@ -85,8 +85,6 @@ void ImagemOpenCV::rotacionar(double cx, double cy, double angulo) const{
 
 void ImagemOpenCV::salvar(const char* localSaida) const {
 
-    //const char* localSaida = obterLocalSaida(diretorioSaida);
-
-    //imwrite(localSaida, matProc);
+    imwrite(localSaida, matProc);
 
 }

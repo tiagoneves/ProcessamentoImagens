@@ -19,7 +19,7 @@ class ImagemMagick : public Imagem{
 
         virtual void converter(const string output) const ;
 
-        virtual void crop(double cx, double cy, int width, int height) const ;
+        virtual void crop(double xUp, double yUp, int xLow, int yLow) const ;
 
         virtual void rotacionar(double cx, double cy, double angulo) const ;
 

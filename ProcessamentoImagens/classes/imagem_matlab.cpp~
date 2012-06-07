@@ -26,7 +26,9 @@ void ImagemMatlab::redimensionar(double width, double height) const{
 
 	memcpy((void *)mxGetPr(mxSize), (void *)size, sizeof(size));
 
-	engEvalString(engine, "B = imresize(A, mxSize)");    
+	engPutVariable(engine, "size", mxSize);
+
+	engEvalString(engine, "B = imresize(A, size)");    
 
 }
 
@@ -36,13 +38,21 @@ void ImagemMatlab::converter(const string output) const{
 
 }
 
-void ImagemMatlab::crop(double cx, double cy, int width, int height)const{
+void ImagemMatlab::crop(double xUp, double yUp, int xLow, int yLow) const {
 
-   //TODO
+   double size[4] = {xUp, yUp, xLow, yLow};
+	
+   mxArray* mxSize = mxCreateDoubleMatrix(1, 4, mxREAL);
+
+   memcpy((void *)mxGetPr(mxSize), (void *)size, sizeof(size));
+
+   engPutVariable(engine, "size", mxSize);
+
+   engEvalString(engine, "B = imcrop(A, size)");
 
 }
 
-void ImagemMatlab::rotacionar(double cx, double cy, double angulo) const{
+void ImagemMatlab::rotacionar(double cx, double cy, double angulo) const {
 
    //TODO
 

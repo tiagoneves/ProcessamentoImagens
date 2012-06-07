@@ -30,10 +30,8 @@ void ImagemMagick::redimensionar(double width, double height) const {
 }
 
 void ImagemMagick::salvar(const char* localSaida) const {
-
-    //const char* localSaida = obterLocalSaida(diretorioSaida);    
-
-    //imagem.write(localSaida);
+ 
+    imagem.write(localSaida);
 
 }
 
@@ -43,7 +41,7 @@ void ImagemMagick::converter(const string output) const {
 
 }
 
-void ImagemMagick::crop(double cx, double cy, int width, int height) const {
+void ImagemMagick::crop(double xUp, double yUp, int xLow, int yLow) const {
 
     //Geometry geom = imagem.size();
 
