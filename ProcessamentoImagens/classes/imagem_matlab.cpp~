@@ -4,6 +4,8 @@
 
 ImagemMatlab::ImagemMatlab(const char* caminhoEntrada)  : Imagem (caminhoEntrada){
 
+    InitializeMagick("/usr/local/lib");
+
     if (!(engine = engOpen("\0"))) 
 		
 	throw ConnectException("Não foi possível conectar-se ao MATLAB");	
@@ -38,7 +40,7 @@ void ImagemMatlab::converter(const string output) const{
 
 }
 
-void ImagemMatlab::crop(double xUp, double yUp, int xLow, int yLow) const {
+void ImagemMatlab::crop(double xUp, double yUp, double xLow, double yLow) const {
 
    double rect[4] = {xUp, yUp, xLow, yLow};
 	

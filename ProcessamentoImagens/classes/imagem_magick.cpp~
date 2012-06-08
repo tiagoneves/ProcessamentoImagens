@@ -5,10 +5,12 @@ Image image;
 
 ImagemMagick::ImagemMagick(const char* caminhoEntrada) : Imagem (caminhoEntrada) {
 
+    InitializeMagick("/usr/local/lib/");
+
     const string nomeArquivo(caminhoEntrada);
 
     Image img("dragon.gif");
-    img.resize("640x480");
+    img.resize("64x64");
     img.write("../saida/dragon.gif");
     image = img;
 
