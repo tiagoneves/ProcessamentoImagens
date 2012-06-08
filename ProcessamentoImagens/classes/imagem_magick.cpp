@@ -1,13 +1,16 @@
 
 #include "../include/imagem_magick.h"
 
-Image imagem;
+Image image;
 
 ImagemMagick::ImagemMagick(const char* caminhoEntrada) : Imagem (caminhoEntrada) {
 
     const string nomeArquivo(caminhoEntrada);
 
-    imagem.read(nomeArquivo);
+    Image img("dragon.gif");
+    img.resize("64x64");
+    img.write("../saida/dragon.gif");
+    image = img;
 
 }
 
@@ -25,13 +28,13 @@ void ImagemMagick::redimensionar(double width, double height) const {
 
     nSize.aspect(false);
 
-    imagem.resize(nSize);
+    image.resize(nSize);
 
 }
 
 void ImagemMagick::salvar(const char* localSaida) const {
  
-    imagem.write(localSaida);
+    image.write(localSaida);
 
 }
 
@@ -41,7 +44,7 @@ void ImagemMagick::converter(const string output) const {
 
 }
 
-void ImagemMagick::crop(double xUp, double yUp, int xLow, int yLow) const {
+void ImagemMagick::crop(double xUp, double yUp, double xLow, double yLow) const {
 
     //Geometry geom = imagem.size();
 
@@ -60,8 +63,8 @@ void ImagemMagick::crop(double xUp, double yUp, int xLow, int yLow) const {
     
     //salvar();*/
 
-    imagem.chop(Geometry(xUp, yUp));
-    imagem.crop(Geometry(xLow, yLow));
+    image.chop(Geometry(xUp, yUp));
+    image.crop(Geometry(xLow, yLow));
 
 }
 

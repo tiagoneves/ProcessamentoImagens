@@ -40,15 +40,15 @@ void ImagemMatlab::converter(const string output) const{
 
 void ImagemMatlab::crop(double xUp, double yUp, int xLow, int yLow) const {
 
-   double size[4] = {xUp, yUp, xLow, yLow};
+   double rect[4] = {xUp, yUp, xLow, yLow};
 	
    mxArray* mxSize = mxCreateDoubleMatrix(1, 4, mxREAL);
 
-   memcpy((void *)mxGetPr(mxSize), (void *)size, sizeof(size));
+   memcpy((void *)mxGetPr(mxSize), (void *)rect, sizeof(rect));
 
-   engPutVariable(engine, "size", mxSize);
+   engPutVariable(engine, "rect", mxSize);
 
-   engEvalString(engine, "B = imcrop(A, size)");
+   engEvalString(engine, "B = imcrop(A, rect)");
 
 }
 

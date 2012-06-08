@@ -38,7 +38,7 @@ void ImagemMatlab::converter(const string output) const{
 
 }
 
-void ImagemMatlab::crop(double xUp, double yUp, int xLow, int yLow) const {
+void ImagemMatlab::crop(double xUp, double yUp, double xLow, double yLow) const {
 
    double rect[4] = {xUp, yUp, xLow, yLow};
 	
