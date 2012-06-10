@@ -27,9 +27,6 @@ void ImagemCImg::redimensionar(double width, double height) const{
 
     imagem.resize(widthI, heightI);
 
-    //CImg<double> image2("S1001L01.jpg"); 
-    //imagem=imagem.resize(-40,-40,-100,-100,5);
-
 }
 
 void ImagemCImg::converter(const string output) const{
@@ -52,6 +49,6 @@ void ImagemCImg::rotacionar(double cx, double cy, double angulo) const{
 
 void ImagemCImg::salvar(const char* localSaida) const {
 
-    //imagem.save(localSaida);
+    imagem.save(localSaida);
 
 }

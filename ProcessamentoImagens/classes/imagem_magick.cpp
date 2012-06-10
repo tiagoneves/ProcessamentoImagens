@@ -1,16 +1,21 @@
 
 #include "../include/imagem_magick.h"
 
+#include <iostream>
+
 Image image;
 
 ImagemMagick::ImagemMagick(const char* caminhoEntrada) : Imagem (caminhoEntrada) {
 
     const string nomeArquivo(caminhoEntrada);
 
-    Image img("dragon.gif");
+    /*Image img("dragon.gif");
     img.resize("64x64");
     img.write("../saida/dragon.gif");
-    image = img;
+    image = img;*/
+
+   Image img(caminhoEntrada);
+   image = img;
 
 }
 
@@ -23,12 +28,25 @@ void ImagemMagick::redimensionar(double width, double height) const {
     //double x = geom.width();
     //double y = geom.height();
 
-    Geometry nSize = Geometry(width, height);
+    Geometry size = image.size();
+
+    double a = size.width();
+    double b = size.height();
+
+    printf("%f\n", a);
+    printf("%f\n", b);
+
+    //Geometry nSize = Geometry(width, height);
     //Geometry nSize = Geometry("68x68");
 
-    nSize.aspect(false);
+    //image.zoom( Geometry(a * 2, b * 1.5));
 
-    image.resize(nSize);
+image.rotate(45);
+
+
+    //image.resize(nSize);
+
+
 
 }
 

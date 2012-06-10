@@ -34,13 +34,13 @@ int Comum::operar(char **argv)
 
 	    diretorioSaida = argv[7];
 
-            double cx = atof(argv[3]);
-            double cy = atof(argv[4]);
+            double xUp = atof(argv[3]);
+            double yUp = atof(argv[4]);
 
-            int width = atoi(argv[5]);
-            int height = atoi(argv[6]);
+            double xLow = atof(argv[5]);
+            double yLow = atof(argv[6]);
 
-            imagem -> crop(cx, cy, width, height);
+            imagem -> crop(xUp, yUp, xLow, yLow);
 
         } else if (strcmp(operacao, "rotacionar") == 0) {
             

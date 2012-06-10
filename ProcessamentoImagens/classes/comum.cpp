@@ -19,8 +19,8 @@ int Comum::operar(char **argv)
 	    
 	    diretorioSaida = argv[5];
 
-            int x = atoi(argv[3]);
-            int y = atoi(argv[4]);
+            double x = atof(argv[3]);
+            double y = atof(argv[4]);
 
             imagem -> redimensionar(x, y);
 
