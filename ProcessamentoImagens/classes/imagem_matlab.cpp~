@@ -4,8 +4,6 @@
 
 ImagemMatlab::ImagemMatlab(const char* caminhoEntrada)  : Imagem (caminhoEntrada){
 
-    InitializeMagick("/usr/local/lib");
-
     if (!(engine = engOpen("\0"))) 
 		
 	throw ConnectException("Não foi possível conectar-se ao MATLAB");	
@@ -56,8 +54,13 @@ void ImagemMatlab::crop(double xUp, double yUp, double xLow, double yLow) const 
 
 void ImagemMatlab::rotacionar(double cx, double cy, double angulo) const {
 
-   //TODO
+   mxArray* mxSize = mxCreateDoubleMatrix(1, 1, mxREAL);
+   
+   memcpy((void *)mxGetPr(mxSize), (void *)angulo, sizeof(angulo));
 
+   engPutVariable(engine, "angulo", mxSize);
+
+   engEvalString(engine, "B = imrotate(A, angulo)");
 
 }
 

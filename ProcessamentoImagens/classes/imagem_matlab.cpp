@@ -54,8 +54,15 @@ void ImagemMatlab::crop(double xUp, double yUp, double xLow, double yLow) const 
 
 void ImagemMatlab::rotacionar(double cx, double cy, double angulo) const {
 
-   //TODO
+   double ang[1] = {angulo};
 
+   mxArray* mxSize = mxCreateDoubleMatrix(1, 1, mxREAL);
+   
+   memcpy((void *)mxGetPr(mxSize), (void *)ang, sizeof(ang));
+
+   engPutVariable(engine, "angulo", mxSize);
+
+   engEvalString(engine, "B = imrotate(A, angulo)");
 
 }
 
