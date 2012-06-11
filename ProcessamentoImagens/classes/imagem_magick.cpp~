@@ -39,7 +39,9 @@ void ImagemMagick::redimensionar(double width, double height) const {
     //Geometry nSize = Geometry(width, height);
     //Geometry nSize = Geometry("68x68");
 
-    image.zoom( Geometry(a * 2, b * 1.5));
+    //image.zoom( Geometry(a * 2, b * 1.5));
+
+image.rotate(45);
 
 
     //image.resize(nSize);
