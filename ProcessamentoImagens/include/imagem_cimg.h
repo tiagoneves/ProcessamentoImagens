@@ -21,7 +21,7 @@ class ImagemCImg : public Imagem{
 
         virtual void crop(double xUp, double yUp, double xLow, double yLow) const;
 
-        virtual void rotacionar(double cx, double cy, double angulo) const;
+        virtual void rotacionar(double angulo) const;
 
 };
 

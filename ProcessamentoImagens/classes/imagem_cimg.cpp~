@@ -25,7 +25,7 @@ void ImagemCImg::redimensionar(double width, double height) const{
     int widthI = (int) width;
     int heightI = (int) height;
 
-    imagem.resize(widthI, heightI);
+    imagem.resize(54, 36);
 
 }
 

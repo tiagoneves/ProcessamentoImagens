@@ -83,7 +83,7 @@ void ImagemMagick::crop(double xUp, double yUp, double xLow, double yLow) const 
 
 }
 
-void ImagemMagick::rotacionar(double cx, double cy, double angulo) const {
+void ImagemMagick::rotacionar(double angulo) const {
 
     //TODO implementar
 

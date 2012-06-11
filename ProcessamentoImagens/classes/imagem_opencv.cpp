@@ -63,27 +63,13 @@ void ImagemOpenCV::crop(double xUp, double yUp, double xLow, double yLow)const{
 
 }
 
-void ImagemOpenCV::rotacionar(double cx, double cy, double angulo) const{
+void ImagemOpenCV::rotacionar(double angulo) const{
 
-    Mat matRot = getRotationMatrix2D(Point2f(cx, cy), angulo, 1);
+    Point2f centro(matriz.cols/2.0F, matriz.rows/2.0F);
 
-    matriz.assignTo(matRot, 16);
-    //matriz.assignTo(matProc, 16);
+    Mat matRot = getRotationMatrix2D(centro, angulo, 1.0);
 
-    /*printf("%d\n", matRot.channels());
-    printf("%d\n", matRot.type());
-    printf("%d\n", matriz.channels());
-    printf("%d\n", matriz.type());
-    printf("%d\n", matProc.channels());
-    printf("%d\n", matProc.type());*/
-
-    //matriz.copyTo(matProc);
-
-    matProc = matriz.mul(matRot);
-
-    //imwrite(local, matRot);
-
-    //transform(matriz, matProc, matRot);
+    warpAffine(matriz, matProc, matRot, matriz.size());
 
 
 }

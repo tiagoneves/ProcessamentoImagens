@@ -9,10 +9,6 @@ using namespace cimg_library;
 
 class ImagemCImg : public Imagem{
 
-    private:
-
-	CImg<double> imagem;
-
     public:
 
         ImagemCImg(const char* caminhoEntrada);

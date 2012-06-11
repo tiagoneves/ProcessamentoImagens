@@ -52,7 +52,7 @@ void ImagemMatlab::crop(double xUp, double yUp, double xLow, double yLow) const 
 
 }
 
-void ImagemMatlab::rotacionar(double cx, double cy, double angulo) const {
+void ImagemMatlab::rotacionar(double angulo) const {
 
    double ang[1] = {angulo};
 

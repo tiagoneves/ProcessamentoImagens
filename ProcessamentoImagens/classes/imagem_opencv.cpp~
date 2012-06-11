@@ -42,7 +42,7 @@ void ImagemOpenCV::converter(const string output) const{
 
 }
 
-void ImagemOpenCV::crop(double xUp, double yUp, int xLow, int yLow)const{
+void ImagemOpenCV::crop(double xUp, double yUp, double xLow, double yLow)const{
 
     double width = xLow - xUp;
     double height = yUp - yLow;
@@ -63,7 +63,7 @@ void ImagemOpenCV::crop(double xUp, double yUp, int xLow, int yLow)const{
 
 }
 
-void ImagemOpenCV::rotacionar(double cx, double cy, double angulo) const{
+void ImagemOpenCV::rotacionar(double angulo) const{
 
     Mat matRot = getRotationMatrix2D(Point2f(cx, cy), angulo, 1);
 

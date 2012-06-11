@@ -36,15 +36,12 @@ void ImagemMagick::redimensionar(double width, double height) const {
     printf("%f\n", a);
     printf("%f\n", b);
 
-    //Geometry nSize = Geometry(width, height);
+    Geometry nSize = Geometry(width, height);
     //Geometry nSize = Geometry("68x68");
 
     //image.zoom( Geometry(a * 2, b * 1.5));
 
-image.rotate(45);
-
-
-    //image.resize(nSize);
+    image.resize(nSize);
 
 
 

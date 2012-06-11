@@ -44,13 +44,11 @@ int Comum::operar(char **argv)
 
         } else if (strcmp(operacao, "rotacionar") == 0) {
             
-            diretorioSaida = argv[6];
+            diretorioSaida = argv[4];
 
-            double cx = atof(argv[3]);
-            double cy = atof(argv[4]);
-            double angulo = atof(argv[5]);
+            double angulo = atof(argv[3]);
 
-            imagem -> rotacionar(cx, cy, angulo);
+            imagem -> rotacionar(angulo);
 
         }
 

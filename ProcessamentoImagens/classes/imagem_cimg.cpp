@@ -41,7 +41,7 @@ void ImagemCImg::crop(double xUp, double yUp, double xLow, double yLow)const{
 
 }
 
-void ImagemCImg::rotacionar(double cx, double cy, double angulo) const{
+void ImagemCImg::rotacionar(double angulo) const{
 
    //TODO
 
