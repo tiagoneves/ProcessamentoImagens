@@ -3,17 +3,12 @@
 
 #include "imagem.h"
 #include "cv.h"
+#include "highgui.h"
 
 using namespace std;
 using namespace cv;
 
 class ImagemOpenCV : public Imagem{
-
-    private:
-
-        IplImage *pImg;
-
-        Mat matriz;
 
     public:
 
@@ -28,6 +23,8 @@ class ImagemOpenCV : public Imagem{
         virtual void crop(double xUp, double yUp, double xLow, double yLow) const;
 
         virtual void rotacionar(double angulo) const;
+
+        virtual void equalizarHistograma() const;
 
 };
 

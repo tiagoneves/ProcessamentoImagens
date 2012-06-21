@@ -50,6 +50,12 @@ int Comum::operar(char **argv)
 
             imagem -> rotacionar(angulo);
 
+        } else if (strcmp(operacao, "equalizar") == 0) {
+
+	    diretorioSaida = argv[3];
+            
+            imagem -> equalizarHistograma();		
+		
         }
 
 	const char* localSaida = imagem -> obterLocalSaida(diretorioSaida);   

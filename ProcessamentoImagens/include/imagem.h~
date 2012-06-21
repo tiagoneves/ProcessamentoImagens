@@ -35,7 +35,7 @@ class Imagem {
 
         virtual void crop(double xUp, double yUp, double xLow, double yLow) const = 0;
 
-        virtual void rotacionar(double cx, double cy, double angulo) const = 0;
+        virtual void rotacionar(double angulo) const = 0;
 
 };
 

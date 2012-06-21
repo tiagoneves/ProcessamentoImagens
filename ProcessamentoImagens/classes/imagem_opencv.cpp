@@ -1,16 +1,14 @@
 
-#include "cv.h"
-#include "highgui.h"
 #include "../include/imagem_opencv.h"
 #include "../include/excecoes.h"
 
-Mat matProc;
+Mat matriz, matProc;
 
 ImagemOpenCV::ImagemOpenCV(const char* caminhoEntrada)  : Imagem (caminhoEntrada){
 
-    if (pImg = cvLoadImage(caminhoEntrada, 1)){
+    matriz = imread(caminhoEntrada, 1);
 
-        matriz = (pImg);
+    if (matriz.data != NULL){
 
         width = matriz.cols;
 
@@ -71,6 +69,14 @@ void ImagemOpenCV::rotacionar(double angulo) const{
 
     warpAffine(matriz, matProc, matRot, matriz.size());
 
+
+}
+
+void ImagemOpenCV::equalizarHistograma() const {
+
+	cvtColor(matriz, matriz, CV_BGR2GRAY);
+
+	equalizeHist(matriz, matProc);
 
 }
 

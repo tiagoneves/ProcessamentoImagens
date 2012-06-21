@@ -37,6 +37,8 @@ class Imagem {
 
         virtual void rotacionar(double angulo) const = 0;
 
+	virtual void equalizarHistograma() const = 0;
+
 };
 
 
