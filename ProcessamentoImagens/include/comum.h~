@@ -2,9 +2,9 @@
 #ifndef COMUM_H
 #define COMUM_H
 
-//#include <stdio.h>
-#include <string.h>
 #include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
 
 #include "imagem.h"
 #include "excecoes.h"
@@ -29,6 +29,8 @@ class Comum {
 	string copiarNPrimeirosCaracteres(const char* src, int qtd) ;
 
 	string adicionarExtensao(string src, const char* ext);
+        
+        Mat preencherMatriz(char** argv, int linhas, int colunas, int indiceEntrada);
 
 };
 

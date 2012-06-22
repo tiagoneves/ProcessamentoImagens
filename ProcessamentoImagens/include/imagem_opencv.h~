@@ -10,12 +10,6 @@ using namespace cv;
 
 class ImagemOpenCV : public Imagem{
 
-    private:
-
-        IplImage *pImg;
-
-        Mat matriz;
-
     public:
 
         ImagemOpenCV(const char* caminhoEntrada);
@@ -31,6 +25,8 @@ class ImagemOpenCV : public Imagem{
         virtual void rotacionar(double angulo) const;
 
         virtual void equalizarHistograma() const;
+
+	virtual void convolucao(int linhas, int colunas, double mask[linhas][colunas]) const;
 
 };
 

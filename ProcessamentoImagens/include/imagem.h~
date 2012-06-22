@@ -37,6 +37,10 @@ class Imagem {
 
         virtual void rotacionar(double angulo) const = 0;
 
+	virtual void equalizarHistograma() const = 0;
+
+	virtual void convolucao(int linhas, int colunas, double mask[linhas][colunas]) const = 0;
+
 };
 
 

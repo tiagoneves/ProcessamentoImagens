@@ -56,6 +56,34 @@ int Comum::operar(char **argv)
             
             imagem -> equalizarHistograma();		
 		
+        } else if (strcmp(operacao, "convolução") == 0) {
+
+	    int linhas = atoi(argv[3]);
+
+	    int colunas = atoi(argv[4]);
+
+	    diretorioSaida = argv[5 + linhas * colunas];
+	    
+            double **mascara;
+
+            int i, j, indiceEntrada = 5;
+
+            mascara = (double**) malloc(linhas*sizeof(double*));
+  
+            for (int i = 0; i < linhas; i++)
+  
+               mascara[i] = (double*) malloc(colunas*sizeof(double));  
+    
+	    for (i = 0; i < linhas; i++) {
+
+	       for(j = 0; j < colunas; j++)
+
+		  mascara[i][j] = atof(argv[indiceEntrada++]);
+
+             }
+
+	    imagem -> convolucao(linhas, colunas, mascara);
+		
         }
 
 	const char* localSaida = imagem -> obterLocalSaida(diretorioSaida);   

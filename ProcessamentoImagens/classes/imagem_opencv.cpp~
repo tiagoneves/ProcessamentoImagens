@@ -2,7 +2,7 @@
 #include "../include/imagem_opencv.h"
 #include "../include/excecoes.h"
 
-Mat matProc;
+Mat matriz, matProc;
 
 ImagemOpenCV::ImagemOpenCV(const char* caminhoEntrada)  : Imagem (caminhoEntrada){
 
@@ -61,7 +61,7 @@ void ImagemOpenCV::crop(double xUp, double yUp, double xLow, double yLow)const{
 
 }
 
-void ImagemOpenCV::rotacionar(double angulo) const{
+void ImagemOpenCV::rotacionar(double angulo) const {
 
     Point2f centro(matriz.cols/2.0F, matriz.rows/2.0F);
 
@@ -77,6 +77,14 @@ void ImagemOpenCV::equalizarHistograma() const {
 	cvtColor(matriz, matriz, CV_BGR2GRAY);
 
 	equalizeHist(matriz, matProc);
+
+}
+
+void ImagemOpenCV::convolucao(int linhas, int colunas, double** mask) const {
+         
+        Mat mascara(linhas, colunas, CV_32F, mask).inv();   
+
+	filter2D(matriz, matProc, -1, mascara, Point(-1, -1));
 
 }
 

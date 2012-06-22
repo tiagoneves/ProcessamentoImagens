@@ -39,6 +39,8 @@ class Imagem {
 
 	virtual void equalizarHistograma() const = 0;
 
+	virtual void convolucao(int linhas, int colunas, double** mask) const = 0;
+
 };
 
 

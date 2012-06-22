@@ -26,6 +26,8 @@ class ImagemOpenCV : public Imagem{
 
         virtual void equalizarHistograma() const;
 
+	virtual void convolucao(int linhas, int colunas, double** mask) const;
+
 };
 
 
