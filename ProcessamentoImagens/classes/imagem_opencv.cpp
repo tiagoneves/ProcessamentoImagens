@@ -82,7 +82,15 @@ void ImagemOpenCV::equalizarHistograma() const {
 
 void ImagemOpenCV::convolucao(int linhas, int colunas, double** mask) const {
          
-        Mat mascara = Mat(linhas, colunas, CV_32F, mask).inv();   
+        Mat mascara = Mat(linhas, colunas, CV_32F);
+	
+	int i, j;
+
+	for(i = 0; i < linhas; i++){
+		for (j = 0; j < colunas; j++)
+			mascara.at<double> (i, j) = mask[i][j];
+        }   
+
 
 	filter2D(matriz, matProc, -1, mascara, Point(-1, -1));
 
