@@ -96,6 +96,14 @@ void ImagemOpenCV::convolucao(int linhas, int colunas, double** mask) const {
 
 }
 
+void ImagemOpenCV::dct() const {
+
+	cvtColor(matriz, matriz, CV_BGR2GRAY);
+
+	cv::dct(matriz, matProc);
+
+}
+
 void ImagemOpenCV::salvar(const char* localSaida) const {
 
     imwrite(localSaida, matProc);

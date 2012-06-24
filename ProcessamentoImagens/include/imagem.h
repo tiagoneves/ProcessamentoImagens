@@ -41,6 +41,8 @@ class Imagem {
 
 	virtual void convolucao(int linhas, int colunas, double** mask) const = 0;
 
+	virtual void dct() const = 0;
+
 };
 
 

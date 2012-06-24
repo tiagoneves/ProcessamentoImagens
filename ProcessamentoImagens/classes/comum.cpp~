@@ -65,8 +65,14 @@ int Comum::operar(char **argv)
 	    diretorioSaida = argv[5 + linhas * colunas];
 	    
             double **mascara;
-	    
+
             int i, j, indiceEntrada = 5;
+
+            mascara = (double**) malloc(linhas*sizeof(double*));
+  
+            for (int i = 0; i < linhas; i++)
+  
+               mascara[i] = (double*) malloc(colunas*sizeof(double));  
     
 	    for (i = 0; i < linhas; i++) {
 

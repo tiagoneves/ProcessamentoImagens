@@ -28,6 +28,8 @@ class ImagemOpenCV : public Imagem{
 
 	virtual void convolucao(int linhas, int colunas, double** mask) const;
 
+	virtual void dct() const;
+
 };
 
 

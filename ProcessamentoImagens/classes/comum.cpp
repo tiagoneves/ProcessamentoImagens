@@ -84,6 +84,12 @@ int Comum::operar(char **argv)
 
 	    imagem -> convolucao(linhas, colunas, mascara);
 		
+        } else if (strcmp(operacao, "dct") == 0) {
+
+	    diretorioSaida = argv[3];
+            
+            imagem -> dct();		
+
         }
 
 	const char* localSaida = imagem -> obterLocalSaida(diretorioSaida);   

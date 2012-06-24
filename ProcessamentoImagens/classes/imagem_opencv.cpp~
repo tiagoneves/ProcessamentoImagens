@@ -87,14 +87,18 @@ void ImagemOpenCV::convolucao(int linhas, int colunas, double** mask) const {
 	int i, j;
 
 	for(i = 0; i < linhas; i++){
-		for (j = 0; j < colunas; j++){
+		for (j = 0; j < colunas; j++)
 			mascara.at<double> (i, j) = mask[i][j];
-                       printf("%f ", mascara.at<double>(i, j));
-                }
         }   
 
 
 	filter2D(matriz, matProc, -1, mascara, Point(-1, -1));
+
+}
+
+void ImagemOpenCV::dct() const {
+
+	cv::dct(matriz, matProc);
 
 }
 
