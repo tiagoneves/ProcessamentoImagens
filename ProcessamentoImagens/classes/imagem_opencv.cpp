@@ -100,6 +100,8 @@ void ImagemOpenCV::dct() const {
 
 	cvtColor(matriz, matriz, CV_BGR2GRAY);
 
+	matriz.convertTo(matriz, CV_32FC1);
+
 	cv::dct(matriz, matProc);
 
 }
