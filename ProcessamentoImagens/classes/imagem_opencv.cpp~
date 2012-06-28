@@ -3,16 +3,23 @@
 #include "../include/excecoes.h"
 
 Mat matriz, matProc;
+IplImage* img;
 
 ImagemOpenCV::ImagemOpenCV(const char* caminhoEntrada)  : Imagem (caminhoEntrada){
 
-    matriz = imread(caminhoEntrada, 1);
+    //matriz = imread(caminhoEntrada, 1);
+    
+    img = cvLoadImage(caminhoEntrada, 1);
+
+    matriz = Mat(img);
 
     if (matriz.data != NULL){
 
         width = matriz.cols;
 
         height = matriz.rows;
+
+        cvtColor(matriz, matriz, CV_BGR2YUV);
 
     } else
 
@@ -74,7 +81,15 @@ void ImagemOpenCV::rotacionar(double angulo) const {
 
 void ImagemOpenCV::equalizarHistograma() const {
 
-	cvtColor(matriz, matriz, CV_BGR2GRAY);
+        IplImage* y = cvCreateImage(cvGetSize(img), 8, 1);
+        IplImage* u = cvCreateImage(cvGetSize(img), 8, 1);
+        IplImage* v = cvCreateImage(cvGetSize(img), 8, 1);
+
+	//cvtColor(matriz, matriz, CV_BGR2GRAY);
+
+        cvSplit(img, y, u, v, NULL);
+
+        matriz = Mat(y);
 
 	equalizeHist(matriz, matProc);
 
@@ -98,7 +113,7 @@ void ImagemOpenCV::convolucao(int linhas, int colunas, double** mask) const {
 
 void ImagemOpenCV::dct() const {
 
-	//cvtColor(matriz, matriz, CV_BGR2GRAY);
+	cvtColor(matriz, matriz, CV_BGR2GRAY);
 
 	matriz.convertTo(matriz, CV_32FC1);
 
