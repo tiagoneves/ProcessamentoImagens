@@ -17,7 +17,7 @@ const char* Imagem::getLocal() const{
 
 }
 
-const char* Imagem::obterNomeArquivo(const char* diretorioSaida) {
+const char* Imagem::obterNomeArquivo(const char* diretorioSaida, const char* local) {
 
 	char* nomeRef = strrchr((char*)local, '/');
 
@@ -30,9 +30,9 @@ const char* Imagem::obterNomeArquivo(const char* diretorioSaida) {
 
 }
 
-const char* Imagem::obterLocalSaida(const char* dirSaida) {
+const char* Imagem::obterLocalSaida(const char* diretorioSaida, const char* local) {
 
-	string nomeArquivo(obterNomeArquivo(diretorioSaida));
+	string nomeArquivo(obterNomeArquivo(diretorioSaida, local));
 
 	string dirSaidaStr(diretorioSaida);
 

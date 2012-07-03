@@ -1,0 +1,20 @@
+#include <iostream>
+
+#include <string.h>
+
+#include "../include/imagem_opencv.h"
+#include "../include/excecoes.h"
+
+#include "../include/comum.h"
+
+int main(int argc, char **argv) {
+
+
+	Imagem *imagem = new ImagemOpenCV(argv[2], arg);
+
+	Comum comum(imagem);
+
+	return comum.operar(argv);	
+
+
+}

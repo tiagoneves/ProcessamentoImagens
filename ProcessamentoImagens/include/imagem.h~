@@ -31,7 +31,7 @@ class Imagem {
 
         virtual void salvar(const char* localSaida) const = 0;
 
-        virtual void converter(const string output) const = 0;
+        virtual void converter(const char* output) const = 0;
 
         virtual void crop(double xUp, double yUp, double xLow, double yLow) const = 0;
 
@@ -40,6 +40,8 @@ class Imagem {
 	virtual void equalizarHistograma() const = 0;
 
 	virtual void convolucao(int linhas, int colunas, double** mask) const = 0;
+
+	virtual void dct() const = 0;
 
 };
 

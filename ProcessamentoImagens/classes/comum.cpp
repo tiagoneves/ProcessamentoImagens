@@ -27,8 +27,11 @@ int Comum::operar(char **argv)
         } else if (strcmp(operacao, "converter") == 0){
             
             diretorioSaida = argv[4];
+	
+	    const char* localSaida = imagem -> obterLocalSaida(diretorioSaida, 
+			trocarExtensao(imagem -> getLocal(), argv[3]));
 
-            imagem -> converter(trocarExtensao(imagem -> getLocal(), argv[4]));
+            imagem -> converter(localSaida);
 
         } else if (strcmp(operacao, "cortar") == 0) {
 
@@ -92,9 +95,12 @@ int Comum::operar(char **argv)
 
         }
 
-	const char* localSaida = imagem -> obterLocalSaida(diretorioSaida);   
+	if (strcmp(operacao, "converter") != 0) {
 
-	imagem -> salvar(localSaida);
+		const char* localSaida = imagem -> obterLocalSaida(diretorioSaida, imagem -> getLocal());   
+
+		imagem -> salvar(localSaida);
+        }
 
     }catch(FileNotFoundException fnf) {
 

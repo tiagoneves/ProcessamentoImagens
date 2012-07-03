@@ -18,7 +18,7 @@ class ImagemOpenCV : public Imagem{
 
         virtual void salvar(const char* localSaida) const;
 
-        virtual void converter(const char* output) const = 0;
+        virtual void converter(const string output) const;
 
         virtual void crop(double xUp, double yUp, double xLow, double yLow) const;
 

@@ -33,13 +33,15 @@ void ImagemOpenCV::redimensionar(double width, double height) const{
 
 }
 
-void ImagemOpenCV::converter(const char* output) const {
+void ImagemOpenCV::converter(const string output) const{
 
-    imwrite(output, matriz);
+    matriz.copyTo(matProc);
+
+    imwrite(output, matProc);
 
 }
 
-void ImagemOpenCV::crop(double xUp, double yUp, double xLow, double yLow) const { 
+void ImagemOpenCV::crop(double xUp, double yUp, double xLow, double yLow)const{
 
     double width = xLow - xUp;
     double height = yUp - yLow;

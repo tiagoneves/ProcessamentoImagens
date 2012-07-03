@@ -7,19 +7,13 @@ IplImage* img;
 
 ImagemOpenCV::ImagemOpenCV(const char* caminhoEntrada)  : Imagem (caminhoEntrada){
 
-    //matriz = imread(caminhoEntrada, 1);
-    
-    img = cvLoadImage(caminhoEntrada, 1);
-
-    matriz = Mat(img);
+    matriz = imread(caminhoEntrada, 1);
 
     if (matriz.data != NULL){
 
         width = matriz.cols;
 
         height = matriz.rows;
-
-        cvtColor(matriz, matriz, CV_BGR2YUV);
 
     } else
 
@@ -39,15 +33,13 @@ void ImagemOpenCV::redimensionar(double width, double height) const{
 
 }
 
-void ImagemOpenCV::converter(const string output) const{
+void ImagemOpenCV::converter(const char* output) const {
 
     matriz.copyTo(matProc);
 
-    imwrite(output, matProc);
-
 }
 
-void ImagemOpenCV::crop(double xUp, double yUp, double xLow, double yLow)const{
+void ImagemOpenCV::crop(double xUp, double yUp, double xLow, double yLow) const { 
 
     double width = xLow - xUp;
     double height = yUp - yLow;
@@ -81,6 +73,8 @@ void ImagemOpenCV::rotacionar(double angulo) const {
 
 void ImagemOpenCV::equalizarHistograma() const {
 
+	/*cvtColor(matProc, matProc, CV_BGR2YUV);
+
         IplImage* y = cvCreateImage(cvGetSize(img), 8, 1);
         IplImage* u = cvCreateImage(cvGetSize(img), 8, 1);
         IplImage* v = cvCreateImage(cvGetSize(img), 8, 1);
@@ -89,9 +83,15 @@ void ImagemOpenCV::equalizarHistograma() const {
 
         cvSplit(img, y, u, v, NULL);
 
-        matriz = Mat(y);
+        matriz = Mat(y);*/
 
-	equalizeHist(matriz, matProc);
+        cvtColor(matriz, matriz, CV_BGR2YUV);
+
+        vector<Mat> matriz_yuv;
+
+        split(matriz, matriz_yuv);
+
+	equalizeHist(matriz_yuv.at(0), matProc);
 
 }
 
@@ -113,7 +113,17 @@ void ImagemOpenCV::convolucao(int linhas, int colunas, double** mask) const {
 
 void ImagemOpenCV::dct() const {
 
-	cvtColor(matriz, matriz, CV_BGR2GRAY);
+	//cvtColor(matriz, matriz, CV_BGR2GRAY);
+
+        /*IplImage* y = cvCreateImage(cvGetSize(img), 8, 1);
+        IplImage* u = cvCreateImage(cvGetSize(img), 8, 1);
+        IplImage* v = cvCreateImage(cvGetSize(img), 8, 1);
+
+        cvSplit(img, y, u, v, NULL);
+
+        matriz = Mat(y);*/
+
+        cvtColor(matriz, matriz, CV_BGR2GRAY);
 
 	matriz.convertTo(matriz, CV_32FC1);
 

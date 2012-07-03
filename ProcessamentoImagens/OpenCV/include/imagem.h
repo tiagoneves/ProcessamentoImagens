@@ -25,13 +25,13 @@ class Imagem {
 	
 	void setLocalSaida(const char* diretorioSaida);
 
-        const char* obterLocalSaida(const char* diretorioSaida, const char* local);
+        const char* obterLocalSaida(const char* diretorioSaida);
 
         virtual void redimensionar(double width, double height) const = 0;;
 
         virtual void salvar(const char* localSaida) const = 0;
 
-        virtual void converter(const char* output) const = 0;
+        virtual void converter(const string output) const = 0;
 
         virtual void crop(double xUp, double yUp, double xLow, double yLow) const = 0;
 
