@@ -35,7 +35,7 @@ void ImagemOpenCV::redimensionar(double width, double height) const{
 
 void ImagemOpenCV::converter(const char* output) const {
 
-    matriz.copyTo(matProc);
+    imwrite(output, matriz);
 
 }
 
@@ -91,7 +91,12 @@ void ImagemOpenCV::equalizarHistograma() const {
 
         split(matriz, matriz_yuv);
 
-	equalizeHist(matriz_yuv.at(0), matProc);
+	equalizeHist(matriz_yuv.at(0), matriz_yuv.at(0));
+
+	merge(matriz_yuv, matProc);
+
+	cvtColor(matProc, matProc, CV_YUV2BGR);
+
 
 }
 

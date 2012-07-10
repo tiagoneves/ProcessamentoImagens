@@ -1,5 +1,6 @@
 
 #include "../include/comum.h"
+#include <time.h>
 
 Comum::Comum(Imagem *img){
 
@@ -10,6 +11,8 @@ Comum::Comum(Imagem *img){
 int Comum::operar(char **argv)
 {
 
+    clock_t start;
+	
     try {
 
 	char* operacao = argv[1];
@@ -22,6 +25,8 @@ int Comum::operar(char **argv)
             double x = atof(argv[3]);
             double y = atof(argv[4]);
 
+	    start = clock();
+
             imagem -> redimensionar(x, y);
 
         } else if (strcmp(operacao, "converter") == 0){
@@ -30,8 +35,13 @@ int Comum::operar(char **argv)
 	
 	    const char* localSaida = imagem -> obterLocalSaida(diretorioSaida, 
 			trocarExtensao(imagem -> getLocal(), argv[3]));
+	
+            start = clock();
 
             imagem -> converter(localSaida);
+             
+	    exibirTempoExecucao(start);
+            
 
         } else if (strcmp(operacao, "cortar") == 0) {
 
@@ -43,6 +53,8 @@ int Comum::operar(char **argv)
             double xLow = atof(argv[5]);
             double yLow = atof(argv[6]);
 
+            start = clock();
+
             imagem -> crop(xUp, yUp, xLow, yLow);
 
         } else if (strcmp(operacao, "rotacionar") == 0) {
@@ -51,11 +63,15 @@ int Comum::operar(char **argv)
 
             double angulo = atof(argv[3]);
 
+            start = clock();
+
             imagem -> rotacionar(angulo);
 
         } else if (strcmp(operacao, "equalizar") == 0) {
 
 	    diretorioSaida = argv[3];
+
+	    start = clock();
             
             imagem -> equalizarHistograma();		
 		
@@ -85,21 +101,28 @@ int Comum::operar(char **argv)
 
              }
 
+            start = clock();
+
 	    imagem -> convolucao(linhas, colunas, mascara);
 		
         } else if (strcmp(operacao, "dct") == 0) {
 
 	    diretorioSaida = argv[3];
             
-            imagem -> dct();		
+            start = clock();
+            
+            imagem -> dct();
 
         }
 
 	if (strcmp(operacao, "converter") != 0) {
 
-		const char* localSaida = imagem -> obterLocalSaida(diretorioSaida, imagem -> getLocal());   
-
+		const char* localSaida = imagem -> obterLocalSaida(diretorioSaida, imagem -> getLocal()); 
+  
 		imagem -> salvar(localSaida);
+
+		exibirTempoExecucao(start);
+		
         }
 
     }catch(FileNotFoundException fnf) {
@@ -117,6 +140,20 @@ int Comum::operar(char **argv)
     }
 
     return 1;
+}
+
+void Comum::exibirTempoExecucao(clock_t start) {
+
+	clock_t end;
+	
+	double tempo;
+
+	end = clock();
+		
+        tempo = (end - start) * 1000 / CLOCKS_PER_SEC;
+
+        printf ("O tempo de execucao da operacao foi de %f milissegundos.\n", tempo );
+
 }
 
 const char* Comum::trocarExtensao(const char* local, const char* extensao) {

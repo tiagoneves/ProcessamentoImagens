@@ -23,12 +23,6 @@ ImagemOpenCV::ImagemOpenCV(const char* caminhoEntrada)  : Imagem (caminhoEntrada
 
 void ImagemOpenCV::redimensionar(double width, double height) const{
 
-    //double x = nWidth - width;
-    //double y = nHeight - heigh;
-
-    //double novaLargura = width * fatorX;
-    //double novaAltura = width * fatorY;
-
     resize(matriz, matProc, Size(width,  height));
 
 }
@@ -73,25 +67,17 @@ void ImagemOpenCV::rotacionar(double angulo) const {
 
 void ImagemOpenCV::equalizarHistograma() const {
 
-	/*cvtColor(matProc, matProc, CV_BGR2YUV);
-
-        IplImage* y = cvCreateImage(cvGetSize(img), 8, 1);
-        IplImage* u = cvCreateImage(cvGetSize(img), 8, 1);
-        IplImage* v = cvCreateImage(cvGetSize(img), 8, 1);
-
-	//cvtColor(matriz, matriz, CV_BGR2GRAY);
-
-        cvSplit(img, y, u, v, NULL);
-
-        matriz = Mat(y);*/
-
         cvtColor(matriz, matriz, CV_BGR2YUV);
 
         vector<Mat> matriz_yuv;
 
         split(matriz, matriz_yuv);
 
-	equalizeHist(matriz_yuv.at(0), matProc);
+	equalizeHist(matriz_yuv.at(0), matriz_yuv.at(0));
+
+	merge(matriz_yuv, matProc);
+
+	cvtColor(matProc, matProc, CV_YUV2BGR);
 
 }
 
@@ -112,16 +98,6 @@ void ImagemOpenCV::convolucao(int linhas, int colunas, double** mask) const {
 }
 
 void ImagemOpenCV::dct() const {
-
-	//cvtColor(matriz, matriz, CV_BGR2GRAY);
-
-        /*IplImage* y = cvCreateImage(cvGetSize(img), 8, 1);
-        IplImage* u = cvCreateImage(cvGetSize(img), 8, 1);
-        IplImage* v = cvCreateImage(cvGetSize(img), 8, 1);
-
-        cvSplit(img, y, u, v, NULL);
-
-        matriz = Mat(y);*/
 
         cvtColor(matriz, matriz, CV_BGR2GRAY);
 

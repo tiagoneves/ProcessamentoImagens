@@ -1,0 +1,8 @@
+redimensionar <caminho da imagem> <largura> <altura> <diretório de saída>
+converter <caminho da imagem> <formato da extensão> <diretório de saída>
+cortar <caminho da imagem> <x do canto superior esquerdo> <y do canto superior esquerdo> <x do canto inferior direito> <y do canto inferior direito>
+rotacionar <caminho da imagem> <angulo> <diretório de saída>
+equalizar <caminho da imagem> <diretório de saída>
+convolução <caminho da imagem> <qtd linhas da matriz de máscara> <qtd colunas da matriz de máscara> <elementos da matriz de máscara separados por espaço> <diretório de saída>
+dct <caminho da imagem> <diretório de saída>
+

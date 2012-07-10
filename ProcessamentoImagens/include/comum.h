@@ -24,6 +24,8 @@ class Comum {
 
 	int operar(char **argv);
 
+	void exibirTempoExecucao(clock_t start);
+
 	const char* trocarExtensao(const char* local, const char* extensao) ;
 
 	string copiarNPrimeirosCaracteres(const char* src, int qtd) ;

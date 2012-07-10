@@ -1,0 +1,457 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+ no time accumulated
+
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+  0.00      0.00     0.00        7     0.00     0.00  cv::Mat::release()
+  0.00      0.00     0.00        4     0.00     0.00  cv::Mat::~Mat()
+  0.00      0.00     0.00        3     0.00     0.00  cv::Mat* std::__addressof<cv::Mat>(cv::Mat&)
+  0.00      0.00     0.00        3     0.00     0.00  void std::_Destroy<cv::Mat>(cv::Mat*)
+  0.00      0.00     0.00        2     0.00     0.00  cv::Mat::MSize::MSize(int*)
+  0.00      0.00     0.00        2     0.00     0.00  cv::Mat::MStep::MStep()
+  0.00      0.00     0.00        2     0.00     0.00  cv::Mat::MStep::operator[](int)
+  0.00      0.00     0.00        2     0.00     0.00  cv::Mat::initEmpty()
+  0.00      0.00     0.00        2     0.00     0.00  cv::Mat::Mat()
+  0.00      0.00     0.00        2     0.00     0.00  cv::Mat::MStep::operator[](int) const
+  0.00      0.00     0.00        2     0.00     0.00  std::vector<cv::Mat, std::allocator<cv::Mat> >::_M_range_check(unsigned long) const
+  0.00      0.00     0.00        2     0.00     0.00  std::vector<cv::Mat, std::allocator<cv::Mat> >::size() const
+  0.00      0.00     0.00        2     0.00     0.00  std::vector<cv::Mat, std::allocator<cv::Mat> >::at(unsigned long)
+  0.00      0.00     0.00        2     0.00     0.00  std::vector<cv::Mat, std::allocator<cv::Mat> >::operator[](unsigned long)
+  0.00      0.00     0.00        1     0.00     0.00  _GLOBAL__sub_I_main
+  0.00      0.00     0.00        1     0.00     0.00  _GLOBAL__sub_I_matriz
+  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  ImagemOpenCV::ImagemOpenCV(char const*)
+  0.00      0.00     0.00        1     0.00     0.00  cv::Mat::operator=(cv::Mat const&)
+  0.00      0.00     0.00        1     0.00     0.00  Comum::exibirTempoExecucao(long)
+  0.00      0.00     0.00        1     0.00     0.00  Comum::operar(char**)
+  0.00      0.00     0.00        1     0.00     0.00  Comum::Comum(Imagem*)
+  0.00      0.00     0.00        1     0.00     0.00  Imagem::obterLocalSaida(char const*, char const*)
+  0.00      0.00     0.00        1     0.00     0.00  Imagem::obterNomeArquivo(char const*)
+  0.00      0.00     0.00        1     0.00     0.00  Imagem::Imagem(char const*)
+  0.00      0.00     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<cv::Mat>::deallocate(cv::Mat*, unsigned long)
+  0.00      0.00     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<cv::Mat>::new_allocator()
+  0.00      0.00     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<cv::Mat>::~new_allocator()
+  0.00      0.00     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<int>::new_allocator()
+  0.00      0.00     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<int>::~new_allocator()
+  0.00      0.00     0.00        1     0.00     0.00  ImagemOpenCV::equalizarHistograma() const
+  0.00      0.00     0.00        1     0.00     0.00  ImagemOpenCV::salvar(char const*) const
+  0.00      0.00     0.00        1     0.00     0.00  Imagem::getLocal() const
+  0.00      0.00     0.00        1     0.00     0.00  std::allocator<cv::Mat>::allocator()
+  0.00      0.00     0.00        1     0.00     0.00  std::allocator<cv::Mat>::~allocator()
+  0.00      0.00     0.00        1     0.00     0.00  std::allocator<int>::allocator()
+  0.00      0.00     0.00        1     0.00     0.00  std::allocator<int>::~allocator()
+  0.00      0.00     0.00        1     0.00     0.00  std::char_traits<char>::length(char const*)
+  0.00      0.00     0.00        1     0.00     0.00  void std::_Destroy_aux<false>::__destroy<cv::Mat*>(cv::Mat*, cv::Mat*)
+  0.00      0.00     0.00        1     0.00     0.00  void std::_Destroy_aux<true>::__destroy<int*>(int*, int*)
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<cv::Mat, std::allocator<cv::Mat> >::_Vector_impl::_Vector_impl()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<cv::Mat, std::allocator<cv::Mat> >::_Vector_impl::~_Vector_impl()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<cv::Mat, std::allocator<cv::Mat> >::_M_deallocate(cv::Mat*, unsigned long)
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<cv::Mat, std::allocator<cv::Mat> >::_M_get_Tp_allocator()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<cv::Mat, std::allocator<cv::Mat> >::_Vector_base()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<cv::Mat, std::allocator<cv::Mat> >::~_Vector_base()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long)
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_Vector_base()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::~_Vector_base()
+  0.00      0.00     0.00        1     0.00     0.00  std::vector<cv::Mat, std::allocator<cv::Mat> >::vector()
+  0.00      0.00     0.00        1     0.00     0.00  std::vector<cv::Mat, std::allocator<cv::Mat> >::~vector()
+  0.00      0.00     0.00        1     0.00     0.00  std::vector<int, std::allocator<int> >::vector()
+  0.00      0.00     0.00        1     0.00     0.00  std::vector<int, std::allocator<int> >::~vector()
+  0.00      0.00     0.00        1     0.00     0.00  void std::_Destroy<cv::Mat*>(cv::Mat*, cv::Mat*)
+  0.00      0.00     0.00        1     0.00     0.00  void std::_Destroy<cv::Mat*, cv::Mat>(cv::Mat*, cv::Mat*, std::allocator<cv::Mat>&)
+  0.00      0.00     0.00        1     0.00     0.00  void std::_Destroy<int*>(int*, int*)
+  0.00      0.00     0.00        1     0.00     0.00  void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&)
+  0.00      0.00     0.00        1     0.00     0.00  std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(char const*, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) no time propagated
+
+index % time    self  children    called     name
+                0.00    0.00       1/7           cv::Mat::operator=(cv::Mat const&) [25]
+                0.00    0.00       6/7           cv::Mat::~Mat() [7]
+[6]      0.0    0.00    0.00       7         cv::Mat::release() [6]
+-----------------------------------------------
+                0.00    0.00       1/4           ImagemOpenCV::ImagemOpenCV(char const*) [24]
+                0.00    0.00       3/4           void std::_Destroy<cv::Mat>(cv::Mat*) [9]
+[7]      0.0    0.00    0.00       4         cv::Mat::~Mat() [7]
+                0.00    0.00       6/7           cv::Mat::release() [6]
+-----------------------------------------------
+                0.00    0.00       3/3           void std::_Destroy_aux<false>::__destroy<cv::Mat*>(cv::Mat*, cv::Mat*) [45]
+[8]      0.0    0.00    0.00       3         cv::Mat* std::__addressof<cv::Mat>(cv::Mat&) [8]
+-----------------------------------------------
+                0.00    0.00       3/3           void std::_Destroy_aux<false>::__destroy<cv::Mat*>(cv::Mat*, cv::Mat*) [45]
+[9]      0.0    0.00    0.00       3         void std::_Destroy<cv::Mat>(cv::Mat*) [9]
+                0.00    0.00       3/4           cv::Mat::~Mat() [7]
+-----------------------------------------------
+                0.00    0.00       2/2           cv::Mat::Mat() [14]
+[10]     0.0    0.00    0.00       2         cv::Mat::MSize::MSize(int*) [10]
+-----------------------------------------------
+                0.00    0.00       2/2           cv::Mat::Mat() [14]
+[11]     0.0    0.00    0.00       2         cv::Mat::MStep::MStep() [11]
+-----------------------------------------------
+                0.00    0.00       2/2           cv::Mat::operator=(cv::Mat const&) [25]
+[12]     0.0    0.00    0.00       2         cv::Mat::MStep::operator[](int) [12]
+-----------------------------------------------
+                0.00    0.00       2/2           cv::Mat::Mat() [14]
+[13]     0.0    0.00    0.00       2         cv::Mat::initEmpty() [13]
+-----------------------------------------------
+                0.00    0.00       2/2           __static_initialization_and_destruction_0(int, int) [23]
+[14]     0.0    0.00    0.00       2         cv::Mat::Mat() [14]
+                0.00    0.00       2/2           cv::Mat::MSize::MSize(int*) [10]
+                0.00    0.00       2/2           cv::Mat::MStep::MStep() [11]
+                0.00    0.00       2/2           cv::Mat::initEmpty() [13]
+-----------------------------------------------
+                0.00    0.00       2/2           cv::Mat::operator=(cv::Mat const&) [25]
+[15]     0.0    0.00    0.00       2         cv::Mat::MStep::operator[](int) const [15]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<cv::Mat, std::allocator<cv::Mat> >::at(unsigned long) [18]
+[16]     0.0    0.00    0.00       2         std::vector<cv::Mat, std::allocator<cv::Mat> >::_M_range_check(unsigned long) const [16]
+                0.00    0.00       2/2           std::vector<cv::Mat, std::allocator<cv::Mat> >::size() const [17]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<cv::Mat, std::allocator<cv::Mat> >::_M_range_check(unsigned long) const [16]
+[17]     0.0    0.00    0.00       2         std::vector<cv::Mat, std::allocator<cv::Mat> >::size() const [17]
+-----------------------------------------------
+                0.00    0.00       2/2           ImagemOpenCV::equalizarHistograma() const [37]
+[18]     0.0    0.00    0.00       2         std::vector<cv::Mat, std::allocator<cv::Mat> >::at(unsigned long) [18]
+                0.00    0.00       2/2           std::vector<cv::Mat, std::allocator<cv::Mat> >::_M_range_check(unsigned long) const [16]
+                0.00    0.00       2/2           std::vector<cv::Mat, std::allocator<cv::Mat> >::operator[](unsigned long) [19]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<cv::Mat, std::allocator<cv::Mat> >::at(unsigned long) [18]
+[19]     0.0    0.00    0.00       2         std::vector<cv::Mat, std::allocator<cv::Mat> >::operator[](unsigned long) [19]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [109]
+[20]     0.0    0.00    0.00       1         _GLOBAL__sub_I_main [20]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [22]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [109]
+[21]     0.0    0.00    0.00       1         _GLOBAL__sub_I_matriz [21]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [23]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I_main [20]
+[22]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [22]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I_matriz [21]
+[23]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [23]
+                0.00    0.00       2/2           cv::Mat::Mat() [14]
+-----------------------------------------------
+                0.00    0.00       1/1           main [5]
+[24]     0.0    0.00    0.00       1         ImagemOpenCV::ImagemOpenCV(char const*) [24]
+                0.00    0.00       1/1           Imagem::Imagem(char const*) [31]
+                0.00    0.00       1/1           cv::Mat::operator=(cv::Mat const&) [25]
+                0.00    0.00       1/4           cv::Mat::~Mat() [7]
+-----------------------------------------------
+                0.00    0.00       1/1           ImagemOpenCV::ImagemOpenCV(char const*) [24]
+[25]     0.0    0.00    0.00       1         cv::Mat::operator=(cv::Mat const&) [25]
+                0.00    0.00       2/2           cv::Mat::MStep::operator[](int) [12]
+                0.00    0.00       2/2           cv::Mat::MStep::operator[](int) const [15]
+                0.00    0.00       1/7           cv::Mat::release() [6]
+-----------------------------------------------
+                0.00    0.00       1/1           Comum::operar(char**) [27]
+[26]     0.0    0.00    0.00       1         Comum::exibirTempoExecucao(long) [26]
+-----------------------------------------------
+                0.00    0.00       1/1           main [5]
+[27]     0.0    0.00    0.00       1         Comum::operar(char**) [27]
+                0.00    0.00       1/1           ImagemOpenCV::equalizarHistograma() const [37]
+                0.00    0.00       1/1           Imagem::getLocal() const [39]
+                0.00    0.00       1/1           Imagem::obterLocalSaida(char const*, char const*) [29]
+                0.00    0.00       1/1           ImagemOpenCV::salvar(char const*) const [38]
+                0.00    0.00       1/1           Comum::exibirTempoExecucao(long) [26]
+-----------------------------------------------
+                0.00    0.00       1/1           main [5]
+[28]     0.0    0.00    0.00       1         Comum::Comum(Imagem*) [28]
+-----------------------------------------------
+                0.00    0.00       1/1           Comum::operar(char**) [27]
+[29]     0.0    0.00    0.00       1         Imagem::obterLocalSaida(char const*, char const*) [29]
+                0.00    0.00       1/1           Imagem::obterNomeArquivo(char const*) [30]
+                0.00    0.00       1/1           std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(char const*, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [67]
+-----------------------------------------------
+                0.00    0.00       1/1           Imagem::obterLocalSaida(char const*, char const*) [29]
+[30]     0.0    0.00    0.00       1         Imagem::obterNomeArquivo(char const*) [30]
+-----------------------------------------------
+                0.00    0.00       1/1           ImagemOpenCV::ImagemOpenCV(char const*) [24]
+[31]     0.0    0.00    0.00       1         Imagem::Imagem(char const*) [31]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<cv::Mat, std::allocator<cv::Mat> >::_M_deallocate(cv::Mat*, unsigned long) [49]
+[32]     0.0    0.00    0.00       1         __gnu_cxx::new_allocator<cv::Mat>::deallocate(cv::Mat*, unsigned long) [32]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator<cv::Mat>::allocator() [40]
+[33]     0.0    0.00    0.00       1         __gnu_cxx::new_allocator<cv::Mat>::new_allocator() [33]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator<cv::Mat>::~allocator() [41]
+[34]     0.0    0.00    0.00       1         __gnu_cxx::new_allocator<cv::Mat>::~new_allocator() [34]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator<int>::allocator() [42]
+[35]     0.0    0.00    0.00       1         __gnu_cxx::new_allocator<int>::new_allocator() [35]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator<int>::~allocator() [43]
+[36]     0.0    0.00    0.00       1         __gnu_cxx::new_allocator<int>::~new_allocator() [36]
+-----------------------------------------------
+                0.00    0.00       1/1           Comum::operar(char**) [27]
+[37]     0.0    0.00    0.00       1         ImagemOpenCV::equalizarHistograma() const [37]
+                0.00    0.00       2/2           std::vector<cv::Mat, std::allocator<cv::Mat> >::at(unsigned long) [18]
+                0.00    0.00       1/1           std::vector<cv::Mat, std::allocator<cv::Mat> >::vector() [59]
+                0.00    0.00       1/1           std::vector<cv::Mat, std::allocator<cv::Mat> >::~vector() [60]
+-----------------------------------------------
+                0.00    0.00       1/1           Comum::operar(char**) [27]
+[38]     0.0    0.00    0.00       1         ImagemOpenCV::salvar(char const*) const [38]
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::vector() [61]
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::~vector() [62]
+-----------------------------------------------
+                0.00    0.00       1/1           Comum::operar(char**) [27]
+[39]     0.0    0.00    0.00       1         Imagem::getLocal() const [39]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<cv::Mat, std::allocator<cv::Mat> >::_Vector_impl::_Vector_impl() [47]
+[40]     0.0    0.00    0.00       1         std::allocator<cv::Mat>::allocator() [40]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<cv::Mat>::new_allocator() [33]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<cv::Mat, std::allocator<cv::Mat> >::_Vector_impl::~_Vector_impl() [48]
+[41]     0.0    0.00    0.00       1         std::allocator<cv::Mat>::~allocator() [41]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<cv::Mat>::~new_allocator() [34]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl() [53]
+[42]     0.0    0.00    0.00       1         std::allocator<int>::allocator() [42]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<int>::new_allocator() [35]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl() [54]
+[43]     0.0    0.00    0.00       1         std::allocator<int>::~allocator() [43]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<int>::~new_allocator() [36]
+-----------------------------------------------
+                0.00    0.00       1/1           std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(char const*, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [67]
+[44]     0.0    0.00    0.00       1         std::char_traits<char>::length(char const*) [44]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::_Destroy<cv::Mat*>(cv::Mat*, cv::Mat*) [63]
+[45]     0.0    0.00    0.00       1         void std::_Destroy_aux<false>::__destroy<cv::Mat*>(cv::Mat*, cv::Mat*) [45]
+                0.00    0.00       3/3           void std::_Destroy<cv::Mat>(cv::Mat*) [9]
+                0.00    0.00       3/3           cv::Mat* std::__addressof<cv::Mat>(cv::Mat&) [8]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::_Destroy<int*>(int*, int*) [65]
+[46]     0.0    0.00    0.00       1         void std::_Destroy_aux<true>::__destroy<int*>(int*, int*) [46]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<cv::Mat, std::allocator<cv::Mat> >::_Vector_base() [51]
+[47]     0.0    0.00    0.00       1         std::_Vector_base<cv::Mat, std::allocator<cv::Mat> >::_Vector_impl::_Vector_impl() [47]
+                0.00    0.00       1/1           std::allocator<cv::Mat>::allocator() [40]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<cv::Mat, std::allocator<cv::Mat> >::~_Vector_base() [52]
+[48]     0.0    0.00    0.00       1         std::_Vector_base<cv::Mat, std::allocator<cv::Mat> >::_Vector_impl::~_Vector_impl() [48]
+                0.00    0.00       1/1           std::allocator<cv::Mat>::~allocator() [41]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<cv::Mat, std::allocator<cv::Mat> >::~_Vector_base() [52]
+[49]     0.0    0.00    0.00       1         std::_Vector_base<cv::Mat, std::allocator<cv::Mat> >::_M_deallocate(cv::Mat*, unsigned long) [49]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<cv::Mat>::deallocate(cv::Mat*, unsigned long) [32]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<cv::Mat, std::allocator<cv::Mat> >::~vector() [60]
+[50]     0.0    0.00    0.00       1         std::_Vector_base<cv::Mat, std::allocator<cv::Mat> >::_M_get_Tp_allocator() [50]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<cv::Mat, std::allocator<cv::Mat> >::vector() [59]
+[51]     0.0    0.00    0.00       1         std::_Vector_base<cv::Mat, std::allocator<cv::Mat> >::_Vector_base() [51]
+                0.00    0.00       1/1           std::_Vector_base<cv::Mat, std::allocator<cv::Mat> >::_Vector_impl::_Vector_impl() [47]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<cv::Mat, std::allocator<cv::Mat> >::~vector() [60]
+[52]     0.0    0.00    0.00       1         std::_Vector_base<cv::Mat, std::allocator<cv::Mat> >::~_Vector_base() [52]
+                0.00    0.00       1/1           std::_Vector_base<cv::Mat, std::allocator<cv::Mat> >::_M_deallocate(cv::Mat*, unsigned long) [49]
+                0.00    0.00       1/1           std::_Vector_base<cv::Mat, std::allocator<cv::Mat> >::_Vector_impl::~_Vector_impl() [48]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_Vector_base() [57]
+[53]     0.0    0.00    0.00       1         std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl() [53]
+                0.00    0.00       1/1           std::allocator<int>::allocator() [42]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [58]
+[54]     0.0    0.00    0.00       1         std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl() [54]
+                0.00    0.00       1/1           std::allocator<int>::~allocator() [43]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [58]
+[55]     0.0    0.00    0.00       1         std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long) [55]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::~vector() [62]
+[56]     0.0    0.00    0.00       1         std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() [56]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::vector() [61]
+[57]     0.0    0.00    0.00       1         std::_Vector_base<int, std::allocator<int> >::_Vector_base() [57]
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl() [53]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::~vector() [62]
+[58]     0.0    0.00    0.00       1         std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [58]
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long) [55]
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl() [54]
+-----------------------------------------------
+                0.00    0.00       1/1           ImagemOpenCV::equalizarHistograma() const [37]
+[59]     0.0    0.00    0.00       1         std::vector<cv::Mat, std::allocator<cv::Mat> >::vector() [59]
+                0.00    0.00       1/1           std::_Vector_base<cv::Mat, std::allocator<cv::Mat> >::_Vector_base() [51]
+-----------------------------------------------
+                0.00    0.00       1/1           ImagemOpenCV::equalizarHistograma() const [37]
+[60]     0.0    0.00    0.00       1         std::vector<cv::Mat, std::allocator<cv::Mat> >::~vector() [60]
+                0.00    0.00       1/1           std::_Vector_base<cv::Mat, std::allocator<cv::Mat> >::_M_get_Tp_allocator() [50]
+                0.00    0.00       1/1           void std::_Destroy<cv::Mat*, cv::Mat>(cv::Mat*, cv::Mat*, std::allocator<cv::Mat>&) [64]
+                0.00    0.00       1/1           std::_Vector_base<cv::Mat, std::allocator<cv::Mat> >::~_Vector_base() [52]
+-----------------------------------------------
+                0.00    0.00       1/1           ImagemOpenCV::salvar(char const*) const [38]
+[61]     0.0    0.00    0.00       1         std::vector<int, std::allocator<int> >::vector() [61]
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_Vector_base() [57]
+-----------------------------------------------
+                0.00    0.00       1/1           ImagemOpenCV::salvar(char const*) const [38]
+[62]     0.0    0.00    0.00       1         std::vector<int, std::allocator<int> >::~vector() [62]
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() [56]
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [58]
+                0.00    0.00       1/1           void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&) [66]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::_Destroy<cv::Mat*, cv::Mat>(cv::Mat*, cv::Mat*, std::allocator<cv::Mat>&) [64]
+[63]     0.0    0.00    0.00       1         void std::_Destroy<cv::Mat*>(cv::Mat*, cv::Mat*) [63]
+                0.00    0.00       1/1           void std::_Destroy_aux<false>::__destroy<cv::Mat*>(cv::Mat*, cv::Mat*) [45]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<cv::Mat, std::allocator<cv::Mat> >::~vector() [60]
+[64]     0.0    0.00    0.00       1         void std::_Destroy<cv::Mat*, cv::Mat>(cv::Mat*, cv::Mat*, std::allocator<cv::Mat>&) [64]
+                0.00    0.00       1/1           void std::_Destroy<cv::Mat*>(cv::Mat*, cv::Mat*) [63]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&) [66]
+[65]     0.0    0.00    0.00       1         void std::_Destroy<int*>(int*, int*) [65]
+                0.00    0.00       1/1           void std::_Destroy_aux<true>::__destroy<int*>(int*, int*) [46]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::~vector() [62]
+[66]     0.0    0.00    0.00       1         void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&) [66]
+                0.00    0.00       1/1           void std::_Destroy<int*>(int*, int*) [65]
+-----------------------------------------------
+                0.00    0.00       1/1           Imagem::obterLocalSaida(char const*, char const*) [29]
+[67]     0.0    0.00    0.00       1         std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(char const*, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [67]
+                0.00    0.00       1/1           std::char_traits<char>::length(char const*) [44]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+
+Index by function name
+
+  [20] _GLOBAL__sub_I_main    [34] __gnu_cxx::new_allocator<cv::Mat>::~new_allocator() [52] std::_Vector_base<cv::Mat, std::allocator<cv::Mat> >::~_Vector_base()
+  [21] _GLOBAL__sub_I_matriz  [35] __gnu_cxx::new_allocator<int>::new_allocator() [53] std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl()
+  [22] __static_initialization_and_destruction_0(int, int) [36] __gnu_cxx::new_allocator<int>::~new_allocator() [54] std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl()
+  [23] __static_initialization_and_destruction_0(int, int) [37] ImagemOpenCV::equalizarHistograma() const [55] std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long)
+  [24] ImagemOpenCV::ImagemOpenCV(char const*) [38] ImagemOpenCV::salvar(char const*) const [56] std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator()
+  [10] cv::Mat::MSize::MSize(int*) [15] cv::Mat::MStep::operator[](int) const [57] std::_Vector_base<int, std::allocator<int> >::_Vector_base()
+  [11] cv::Mat::MStep::MStep() [39] Imagem::getLocal() const [58] std::_Vector_base<int, std::allocator<int> >::~_Vector_base()
+  [12] cv::Mat::MStep::operator[](int) [16] std::vector<cv::Mat, std::allocator<cv::Mat> >::_M_range_check(unsigned long) const [18] std::vector<cv::Mat, std::allocator<cv::Mat> >::at(unsigned long)
+   [6] cv::Mat::release()     [17] std::vector<cv::Mat, std::allocator<cv::Mat> >::size() const [59] std::vector<cv::Mat, std::allocator<cv::Mat> >::vector()
+  [13] cv::Mat::initEmpty()   [40] std::allocator<cv::Mat>::allocator() [60] std::vector<cv::Mat, std::allocator<cv::Mat> >::~vector()
+  [14] cv::Mat::Mat()         [41] std::allocator<cv::Mat>::~allocator() [19] std::vector<cv::Mat, std::allocator<cv::Mat> >::operator[](unsigned long)
+   [7] cv::Mat::~Mat()        [42] std::allocator<int>::allocator() [61] std::vector<int, std::allocator<int> >::vector()
+  [25] cv::Mat::operator=(cv::Mat const&) [43] std::allocator<int>::~allocator() [62] std::vector<int, std::allocator<int> >::~vector()
+  [26] Comum::exibirTempoExecucao(long) [44] std::char_traits<char>::length(char const*) [8] cv::Mat* std::__addressof<cv::Mat>(cv::Mat&)
+  [27] Comum::operar(char**)  [45] void std::_Destroy_aux<false>::__destroy<cv::Mat*>(cv::Mat*, cv::Mat*) [9] void std::_Destroy<cv::Mat>(cv::Mat*)
+  [28] Comum::Comum(Imagem*)  [46] void std::_Destroy_aux<true>::__destroy<int*>(int*, int*) [63] void std::_Destroy<cv::Mat*>(cv::Mat*, cv::Mat*)
+  [29] Imagem::obterLocalSaida(char const*, char const*) [47] std::_Vector_base<cv::Mat, std::allocator<cv::Mat> >::_Vector_impl::_Vector_impl() [64] void std::_Destroy<cv::Mat*, cv::Mat>(cv::Mat*, cv::Mat*, std::allocator<cv::Mat>&)
+  [30] Imagem::obterNomeArquivo(char const*) [48] std::_Vector_base<cv::Mat, std::allocator<cv::Mat> >::_Vector_impl::~_Vector_impl() [65] void std::_Destroy<int*>(int*, int*)
+  [31] Imagem::Imagem(char const*) [49] std::_Vector_base<cv::Mat, std::allocator<cv::Mat> >::_M_deallocate(cv::Mat*, unsigned long) [66] void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&)
+  [32] __gnu_cxx::new_allocator<cv::Mat>::deallocate(cv::Mat*, unsigned long) [50] std::_Vector_base<cv::Mat, std::allocator<cv::Mat> >::_M_get_Tp_allocator() [67] std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(char const*, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  [33] __gnu_cxx::new_allocator<cv::Mat>::new_allocator() [51] std::_Vector_base<cv::Mat, std::allocator<cv::Mat> >::_Vector_base()

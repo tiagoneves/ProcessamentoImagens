@@ -29,8 +29,6 @@ class Comum {
 	string copiarNPrimeirosCaracteres(const char* src, int qtd) ;
 
 	string adicionarExtensao(string src, const char* ext);
-        
-        Mat preencherMatriz(char** argv, int linhas, int colunas, int indiceEntrada);
 
 };
 
